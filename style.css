@@ -1,0 +1,389 @@
+/* ============================================
+   Reset & Base
+   ============================================ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0B0E14;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  color: #F4F1FF;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ============================================
+   Navbar / Header — Floating Pill Container
+   ============================================ */
+/* ============================================
+   Navbar / Header 
+   ============================================ */
+header {
+  max-width: 1300px;
+  margin: 24px auto 0 auto;
+  border-radius: 20px;
+  padding: 12px 28px;
+  background: rgba(11, 14, 20, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(154, 161, 200, 0.22);
+  position: relative;
+  z-index: 10;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.logo-wrapper {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+  background: transparent;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 36px;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-links a {
+  font-family: 'Space Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  color: #E8E9EF;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #9AA1C8;
+}
+
+/* ============================================
+   Custom CSS Navbar Button (Stronger Gradient & Glow Restored)
+   ============================================ */
+.nav-btn-custom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 20px; 
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #0B0E14;
+  border-radius: 8px;
+  text-decoration: none;
+  
+  /* 1. Stronger Gradient: more visible transition to blue/purple, but calmer than the original #5F6FFF */
+  background: linear-gradient(180deg, #FFFFFF 0%, #D8DFFF 45%, #7B8CFF 100%);
+  
+  /* 2. Inner Border matching the gradient's bottom edge */
+  border: 1px solid rgba(123, 140, 255, 0.6);
+  
+  /* 3. Restored Glow: Using the exact opacities (42% and 47%) from your Figma shadows */
+  box-shadow: 
+    0px 0px 20px 0px rgba(42, 60, 222, 0.42),
+    0px 0px 15px 0px rgba(42, 60, 222, 0.47);
+    
+  /* Instant hover swap */
+  transition: none; 
+}
+
+.nav-btn-custom:hover {
+  /* Exact hover properties from your hover.PNG layout */
+  background: #C2BDD7;
+  border: 1px solid #F4F1FF;
+  box-shadow: none; 
+}
+
+/* ============================================
+   Hero Section — Two-Column Flex Layout
+   ============================================ */
+.hero {
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  padding: 60px 0 80px 0;
+  position: relative;
+}
+
+.hero-grid {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 28px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Left Column */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+  flex: 1;
+  max-width: 780px;
+}
+
+/* Headline */
+.hero h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(40px, 5.5vw, 64px);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #F4F1FF;
+  max-width: 820px;
+}
+
+.rubik-meaning {
+  font-family: 'Rubik Doodle Shadow', cursive;
+  display: inline-block;
+  background: linear-gradient(135deg, #2EE6CA 0%, #4FA3E3 60%, #7B78E5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  
+  text-shadow: none;
+  vertical-align: baseline;
+}
+
+/* Paragraph */
+.description {
+  font-family: 'Space Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #8F9CAE;
+  max-width: 620px;
+}
+
+.wordmark {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  color: #2EE6CA;
+}
+
+/* Slogan Badge */
+.slogan-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 9999px;
+  padding: 8px 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(154, 161, 200, 0.25);
+}
+
+.wolf-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+.slogan-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #8F9CAE;
+  letter-spacing: 0.5px;
+}
+
+/* ============================================
+   Bulletproof Image-Based Buttons
+   ============================================ */
+.btn-asset-wrap {
+  display: inline-block;
+  line-height: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-asset-wrap img {
+  display: block;
+  height: auto;
+  max-height: 48px;
+  width: auto;
+  pointer-events: none;
+}
+
+.btn-asset-wrap .btn-hover {
+  display: none;
+}
+
+.btn-asset-wrap:hover .btn-default {
+  display: none;
+}
+
+.btn-asset-wrap:hover .btn-hover {
+  display: block;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+/* Right Column Artwork */
+.hero-artwork {
+  flex: 0 0 45%;
+  max-width: 600px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.artwork-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+  display: block;
+}
+
+/* ============================================
+   Responsive Media Queries
+   ============================================ */
+@media (max-width: 1100px) {
+  .hero-grid {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+  }
+
+  .hero-artwork {
+    flex: 0 0 auto;
+    max-width: 400px;
+    align-self: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    max-width: calc(100% - 40px);
+    padding: 10px 20px;
+    border-radius: 18px;
+  }
+
+  header nav {
+    gap: 12px;
+  }
+
+  .logo {
+    width: 140px;
+  }
+
+  .nav-links {
+    gap: 14px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .btn-asset-wrap img {
+    max-height: 36px;
+  }
+
+  .hero {
+    padding: 32px 0 48px 0;
+  }
+
+  .hero-grid {
+    padding: 0 20px;
+    gap: 36px;
+  }
+
+  .hero h1 {
+    font-size: clamp(32px, 8vw, 44px);
+    max-width: 100%;
+  }
+
+  .description {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .slogan-badge {
+    padding: 6px 14px;
+  }
+
+  .wolf-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .slogan-text {
+    font-size: 12px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .hero-artwork {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    max-width: calc(100% - 24px);
+    padding: 8px 14px;
+    margin-top: 10px;
+  }
+
+  .logo {
+    width: 110px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: clamp(28px, 7vw, 36px);
+  }
+}

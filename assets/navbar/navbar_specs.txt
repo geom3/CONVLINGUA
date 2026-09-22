@@ -1,0 +1,387 @@
+/* Header */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 121px 0px 88px;
+
+position: absolute;
+width: 1417px;
+height: 76px;
+left: calc(50% - 1417px/2 + 1.7px);
+top: 14px;
+
+background: rgba(0, 0, 0, 0.1);
+background-blend-mode: plus-lighter;
+box-shadow: inset 3px 3px 0.5px -3.5px rgba(255, 255, 255, 0.5), inset 2px 2px 1px -2px #666666, inset -2px -2px 1px -2px #666666, inset 0px 0px 0px 1px #A6A6A6, inset 0px 0px 22px #F2F2F2;
+backdrop-filter: blur(6px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+z-index: 2;
+
+
+/* Nav */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 32px 0px 0px;
+gap: 210px;
+
+width: 1180px;
+max-width: 1180px;
+height: 76px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* company logo */
+
+width: 250px;
+height: 87.25px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 6.3%;
+right: 71.5%;
+top: 33.18%;
+bottom: 16.67%;
+
+background: linear-gradient(180deg, #24FFD5 0%, #8A2BFF 53.85%, #CDA8F9 98.08%);
+
+
+/* Vector */
+
+position: absolute;
+left: 17.36%;
+right: 71.5%;
+top: 33.18%;
+bottom: 16.67%;
+
+background: linear-gradient(180deg, #24FFD5 4.33%, #8A2BFF 52.88%, #CDA8F9 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 9.71%;
+right: 87.14%;
+top: 17.43%;
+bottom: 62.54%;
+
+background: linear-gradient(180deg, #FCFDFD 0%, #25FCD5 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 21.99%;
+right: 74.92%;
+top: 17.43%;
+bottom: 62.69%;
+
+background: linear-gradient(180deg, #FCFDFD 0%, #24FFD5 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 15.91%;
+right: 81.12%;
+top: 75.44%;
+bottom: 16.36%;
+
+background: #141A36;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.54%;
+right: 84.1%;
+top: 50.15%;
+bottom: 43.12%;
+
+background: #141A36;
+
+
+/* Vector */
+
+position: absolute;
+left: 18.84%;
+right: 77.69%;
+top: 50.15%;
+bottom: 43.12%;
+
+background: #141A36;
+
+
+/* CONVLINGUA */
+
+position: absolute;
+left: 38.1%;
+right: 19.74%;
+top: 36.54%;
+bottom: 43.12%;
+
+font-family: 'Orbitron';
+font-style: normal;
+font-weight: 700;
+font-size: 12.8068px;
+line-height: 16px;
+
+background: linear-gradient(90deg, #93FDE9 0%, #7EA9E6 19.23%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+
+/* where meaning lands as intended */
+
+position: absolute;
+left: 47.28%;
+right: 28.72%;
+top: 56.88%;
+bottom: 37.39%;
+
+font-family: 'Orbit';
+font-style: normal;
+font-weight: 400;
+font-size: 3.20171px;
+line-height: 5px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Decentralized Network */
+
+position: absolute;
+width: 13.34px;
+height: 13.34px;
+left: 36.95px;
+top: 22.41px;
+
+background: url(.png);
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 36px;
+
+width: 392px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Approach */
+
+width: 73px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Approach */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #E8E9EF;
+
+
+
+/* Capabilities */
+
+width: 90px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Capabilities */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #E8E9EF;
+
+
+
+/* Process */
+
+width: 62px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Process */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #E8E9EF;
+
+
+
+/* Contact */
+
+width: 59px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Contact */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #E8E9EF;
+
+
+
+/* navrequestbtn */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10.8px 19.8px;
+
+width: 155.6px;
+height: 41.6px;
+
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(211, 216, 255, 0.4) 52.5%, rgba(95, 111, 255, 0.4) 100%), #FFFFFF;
+border: 1px solid rgba(95, 111, 255, 0.75);
+box-shadow: 0px 0px 15px rgba(42, 60, 222, 0.47), 0px 0px 20px rgba(42, 60, 222, 0.42);
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Request a pilot */
+
+width: 114px;
+height: 18px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 14.7px;
+line-height: 18px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #0C0F26;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
