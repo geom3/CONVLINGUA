@@ -28,24 +28,21 @@ a {
    Navbar / Header 
    ============================================ */
 header {
-  /* 1. Tighter and narrower dimensions */
-  max-width: 1150px; 
+  /* Brought down to a contained floating size */
+  max-width: 1200px; 
   height: 64px; 
   margin: 24px auto 0 auto;
-  border-radius: 18px; /* Slightly tighter curve for the shorter height */
+  border-radius: 18px; 
   
   background: rgba(8, 10, 15, 0.4);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   
-  /* 2. Much stronger white border */
   border: 1px solid rgba(255, 255, 255, 0.6); 
-  
-  /* Optional: A subtle inner white glow to make the border pop even more */
   box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.15);
 
-  /* 3. Reduced padding to pull the edges close to the logo and button */
-  padding: 0 28px;
+  /* Clean, uniform padding */
+  padding: 0 32px;
   
   display: flex;
   align-items: center;
@@ -142,19 +139,23 @@ header nav {
 .hero {
   width: 100%;
   min-height: calc(100vh - 100px);
-  padding: 60px 0 80px 0;
+  /* Increased top padding to push the content lower */
+  padding: 100px 0 80px 0; 
   position: relative;
 }
 
 .hero-grid {
-  max-width: 1300px;
+  /* Exactly matches the navbar width */
+  max-width: 1200px; 
   margin: 0 auto;
-  padding: 0 28px;
+  /* Exactly matches the navbar padding so the 'A' in 'AI' perfectly lines up with your logo */
+  padding: 0 32px; 
+  
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 20px;
 }
 
 /* Left Column */
@@ -162,20 +163,23 @@ header nav {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 28px;
+  gap: 36px; 
   flex: 1;
-  max-width: 780px;
+  /* Greatly increased width to give "translation. It scales" room to fit */
+  max-width: 900px; 
 }
 
 /* Headline */
 .hero h1 {
   font-family: 'Russo One', sans-serif;
-  font-weight: 400; /* Prevents faux-bolding distortion */
-  font-size: clamp(40px, 5.5vw, 60px); /* Caps at the 60px Figma spec */
-  line-height: 1.18; /* Equals the 70.85px line-height relative to 60px font */
+  font-weight: 400; 
+  font-size: 60px; 
+  line-height: 70.85px; 
   letter-spacing: -0.66px;
   color: #F4F1FF;
-  max-width: 820px;
+  max-width: 100%;
+
+  white-space: nowrap;
   
 }
 
@@ -193,25 +197,35 @@ header nav {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   vertical-align: middle;
-  margin-top: -20px;
-  padding-top: -50px;
+  margin-top: -5px;
+  padding-bottom: 12px;
+  padding-right: 8px;
 }
 
 /* Paragraph */
 .description {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #8F9CAE;
-  max-width: 620px;
+  font-weight: 400; /* Regular weight */
+  font-size: 18.1px; /* Exact Figma size */
+  line-height: 29.8px; /* Exact Figma line height */
+  letter-spacing: 0px; /* Exact Figma spacing */
+  color: #9AA1C8; /* Solid base color for the text */
+  max-width: 720px; 
 }
 
-.wordmark {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700;
-  color: #2EE6CA;
+.wordmark-img {
+  height: 13px; /* Shrunk down from 19px */
+  width: auto;
+  display: inline-block;
+  vertical-align: baseline; 
+  position: relative;
+  
+  /* Adjusted slightly for the new smaller size */
+  top: 1px; 
+  
+  /* Pulled much closer to the word "is" */
+  margin-right: 2px; 
 }
 
 /* Slogan Badge */
@@ -282,15 +296,19 @@ header nav {
 /* Right Column Artwork */
 .hero-artwork {
   flex: 0 0 45%;
-  max-width: 600px;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: flex-start; 
+  justify-content: flex-end; 
+  
+  /* Increased negative margins to compensate for the massive new size */
+  margin-top: -320px;
+  margin-right: -160px; 
 }
 
 .artwork-img {
-  width: 100%;
-  max-width: 600px;
+  /* The Fix: Hard pixel width forces it to grow past its container */
+  width: 600px; 
+  max-width: none; /* Removes the previous limit */
   height: auto;
   object-fit: contain;
   pointer-events: none;
