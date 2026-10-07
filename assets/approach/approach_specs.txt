@@ -1,0 +1,1100 @@
+/* approach-section */
+
+position: absolute;
+width: 1166px;
+height: 686px;
+left: 202.6px;
+top: 954px;
+
+
+
+/* The same word doesn't mean the same thing twice. */
+
+position: absolute;
+width: 640px;
+height: 144px;
+left: 4px;
+top: 51px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 48px;
+/* or 96% */
+display: flex;
+align-items: center;
+letter-spacing: -0.384px;
+
+color: #F4F1FF;
+
+
+
+/* The problem with scaling dialect: most pipelines are built to catch mistranslation, but few are built to catch the response that's technically correct and still lands wrong ,off register and dialect, missing the cultural beat that a fragmented freelance pool won't reliably catch. */
+
+position: absolute;
+width: 640px;
+height: 108px;
+left: 4px;
+top: 215px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16.3px;
+line-height: 27px;
+/* or 165% */
+display: flex;
+align-items: center;
+
+color: #9AA1C8;
+
+
+
+/* comparison  */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 0.96px;
+
+position: absolute;
+height: 289px;
+left: 0px;
+right: 91px;
+top: 397px;
+
+background: url(), linear-gradient(180deg, rgba(0, 115, 255, 0) 0%, rgba(13, 162, 255, 0.4) 100%);
+background-blend-mode: plus-lighter, normal;
+box-shadow: inset 0px 1px 4px 2px #D2EAFF;
+filter: drop-shadow(0px 10.2677px 13.3981px rgba(87, 177, 255, 0.22)) drop-shadow(0px 3.71362px 4.84582px rgba(87, 177, 255, 0.153301));
+border-radius: 12px;
+
+
+/* freelance-side */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 38.5305px 38.5305px 61.4561px;
+gap: 28px;
+
+width: 536.02px;
+height: 286.22px;
+
+background: #141936;
+opacity: 0.72;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Fragmented freelance pools */
+
+width: 458.96px;
+height: 20px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16.1828px;
+line-height: 20px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: -0.161828px;
+
+color: #9AA1C8;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* freelance-list */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 14.64px;
+
+width: 458.96px;
+height: 138.24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* -1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 0px 0.577957px 21.1918px;
+isolation: isolate;
+
+width: 458.96px;
+height: 23.58px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Horizontal Divider */
+
+position: absolute;
+width: 7.71px;
+height: 1.44px;
+left: 0px;
+top: 9.44px;
+
+background: #7B82AC;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Inconsistent rubric interpretation across contributors */
+
+width: 370px;
+height: 23px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14.8342px;
+line-height: 23px;
+/* identical to box height, or 155% */
+display: flex;
+align-items: center;
+
+color: #9AA1C8;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* -2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 0px 0.577957px 21.1918px;
+isolation: isolate;
+
+width: 458.96px;
+height: 23.58px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Horizontal Divider */
+
+position: absolute;
+width: 7.71px;
+height: 1.44px;
+left: 0px;
+top: 9.44px;
+
+background: #7B82AC;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* No shared quality bar between batches */
+
+width: 276px;
+height: 23px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14.8342px;
+line-height: 23px;
+/* identical to box height, or 155% */
+display: flex;
+align-items: center;
+
+color: #9AA1C8;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* -3 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 0px 0.577957px 21.1918px;
+isolation: isolate;
+
+width: 458.96px;
+height: 23.58px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Horizontal Divider */
+
+position: absolute;
+width: 7.71px;
+height: 1.44px;
+left: 0px;
+top: 9.44px;
+
+background: #7B82AC;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Dialect coverage depends on who's online that day */
+
+width: 358px;
+height: 23px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14.8342px;
+line-height: 23px;
+/* identical to box height, or 155% */
+display: flex;
+align-items: center;
+
+color: #9AA1C8;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* -4 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 0px 0.577957px 21.1918px;
+isolation: isolate;
+
+width: 458.96px;
+height: 23.58px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Horizontal Divider */
+
+position: absolute;
+width: 7.71px;
+height: 1.44px;
+left: 0px;
+top: 9.44px;
+
+background: #7B82AC;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* QA happens after delivery, if at all */
+
+width: 237px;
+height: 23px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14.8342px;
+line-height: 23px;
+/* identical to box height, or 155% */
+display: flex;
+align-items: center;
+
+color: #9AA1C8;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* convlingua-side */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 38.5305px 38.5305px 0px;
+gap: 18.49px;
+
+width: 536.02px;
+height: 287px;
+
+background: #141936;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* CONVLINGUA */
+
+width: 458.96px;
+height: 30px;
+
+font-family: 'Orbitron';
+font-style: normal;
+font-weight: 800;
+font-size: 18.1px;
+line-height: 30px;
+/* identical to box height, or 165% */
+display: flex;
+align-items: center;
+
+background: linear-gradient(90deg, #91F7E9 0%, #6798DD 9%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* conv-list */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 14.55px;
+
+width: 458.96px;
+height: 160.37px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* point1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 0px 0.577957px 21.1918px;
+isolation: isolate;
+
+width: 458.96px;
+height: 23.58px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Background+Shadow */
+
+position: absolute;
+width: 5.78px;
+height: 5.78px;
+left: 0px;
+top: 7.51px;
+
+background: #4EE6D2;
+box-shadow: 0px 0px 7.70609px #4EE6D2;
+border-radius: 2.88978px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* One managed team, briefed on the same rubric */
+
+width: 331px;
+height: 23px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14.8342px;
+line-height: 23px;
+/* identical to box height, or 155% */
+display: flex;
+align-items: center;
+
+color: #F4F1FF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* point2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 0px 0.577957px 21.1918px;
+isolation: isolate;
+
+width: 458.96px;
+height: 23.58px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Background+Shadow */
+
+position: absolute;
+width: 5.78px;
+height: 5.78px;
+left: 0px;
+top: 7.51px;
+
+background: #4EE6D2;
+box-shadow: 0px 0px 7.70609px #4EE6D2;
+border-radius: 2.88978px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Senior evaluators review every batch before delivery */
+
+width: 369px;
+height: 23px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14.8342px;
+line-height: 23px;
+/* identical to box height, or 155% */
+display: flex;
+align-items: center;
+
+color: #F4F1FF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* point3 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 0px 0px 21.1918px;
+isolation: isolate;
+
+width: 458.96px;
+height: 46px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Background+Shadow */
+
+position: absolute;
+width: 5.78px;
+height: 5.78px;
+left: 0px;
+top: 7.61px;
+
+background: #4EE6D2;
+box-shadow: 0px 0px 7.70609px #4EE6D2;
+border-radius: 2.88978px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Deliberate coverage across Gulf, Egyptian, English world-wide, Maghreb, MSA and more */
+
+width: 439px;
+height: 46px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14.8342px;
+line-height: 23px;
+/* or 155% */
+display: flex;
+align-items: center;
+
+color: #F4F1FF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* point4 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 0px 0.577957px 21.1918px;
+isolation: isolate;
+
+width: 458.96px;
+height: 23.58px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Background+Shadow */
+
+position: absolute;
+width: 5.78px;
+height: 5.78px;
+left: 0px;
+top: 7.51px;
+
+background: #4EE6D2;
+box-shadow: 0px 0px 7.70609px #4EE6D2;
+border-radius: 2.88978px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* QA is a layer in the pipeline, not an afterthought */
+
+width: 343px;
+height: 23px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14.8342px;
+line-height: 23px;
+/* identical to box height, or 155% */
+display: flex;
+align-items: center;
+
+color: #F4F1FF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* earth */
+
+position: absolute;
+width: 347px;
+height: 347px;
+left: 819px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.38%;
+right: 5.59%;
+top: 12.86%;
+bottom: -0.06%;
+
+background: #29ADFB;
+
+
+/* Vector */
+
+position: absolute;
+left: 37.49%;
+right: 7.26%;
+top: 12.88%;
+bottom: 41.86%;
+
+background: #E6D495;
+
+
+/* Vector */
+
+position: absolute;
+left: 70.33%;
+right: 5.8%;
+top: -0.08%;
+bottom: 67.97%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.61%;
+right: 55.86%;
+top: 23.05%;
+bottom: 24.61%;
+
+background: #C6A6FA;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.03%;
+right: 47.78%;
+top: 71.24%;
+bottom: -0.01%;
+
+background: #C95DB0;
+
+
+/* Vector */
+
+position: absolute;
+left: 56.72%;
+right: 6.25%;
+top: 61.86%;
+bottom: 1.56%;
+
+background: #074785;
+
+
+/* Vector */
+
+position: absolute;
+left: 56.14%;
+right: 27.8%;
+top: 36.69%;
+bottom: 45.96%;
+
+background: #094885;
+
+
+/* Vector */
+
+position: absolute;
+left: 30.78%;
+right: 53.6%;
+top: 37.41%;
+bottom: 44.76%;
+
+background: #084885;
+
+
+/* Vector */
+
+position: absolute;
+left: 24.93%;
+right: 55.86%;
+top: 37.68%;
+bottom: 41.16%;
+
+background: #FCFDFE;
+
+
+/* Vector */
+
+position: absolute;
+left: 50.72%;
+right: 29.49%;
+top: 37.16%;
+bottom: 41.86%;
+
+background: #FCFDFE;
+
+
+/* Vector */
+
+position: absolute;
+left: 40.71%;
+right: 42.88%;
+top: 59.28%;
+bottom: 29.69%;
+
+background: #074785;
+
+
+/* Vector */
+
+position: absolute;
+left: 13.09%;
+right: 70.64%;
+top: 24.07%;
+bottom: 58.79%;
+
+background: #FDFCFD;
+
+
+/* Vector */
+
+position: absolute;
+left: 81.64%;
+right: 8.9%;
+top: 59.13%;
+bottom: 19.47%;
+
+background: #FAFBFC;
+
+
+/* Vector */
+
+position: absolute;
+left: 43.16%;
+right: 44.73%;
+top: 67.45%;
+bottom: 26.99%;
+
+background: #FAA3AC;
+
+
+/* Vector */
+
+position: absolute;
+left: 28.45%;
+right: 63%;
+top: 59.67%;
+bottom: 34.11%;
+
+background: #79EDE5;
+
+
+/* Vector */
+
+position: absolute;
+left: 62.37%;
+right: 29.02%;
+top: 58.84%;
+bottom: 35.05%;
+
+background: #7AEEE5;
+
+
+/* Vector */
+
+position: absolute;
+left: 59.38%;
+right: 31.84%;
+top: 76.37%;
+bottom: 12.3%;
+
+background: #F7FAFC;
+
+
+/* Vector */
+
+position: absolute;
+left: 14.45%;
+right: 76.95%;
+top: 59.96%;
+bottom: 28.71%;
+
+background: #FDFCFD;
+
+
+/* Vector */
+
+position: absolute;
+left: 64.6%;
+right: 27.54%;
+top: 32.14%;
+bottom: 62.71%;
+
+background: #0E4B83;
+
+
+/* Vector */
+
+position: absolute;
+left: 25.8%;
+right: 66.43%;
+top: 31.9%;
+bottom: 62.62%;
+
+background: #0A4986;
+
+
+/* Vector */
+
+position: absolute;
+left: 77.94%;
+right: 18.88%;
+top: 81.14%;
+bottom: 15.52%;
+
+background: #F3F6F9;
+
+
+/* Vector */
+
+position: absolute;
+left: 87.89%;
+right: 8.98%;
+top: 53.82%;
+bottom: 42.97%;
+
+background: #F6FBFE;
+
+
+/* Vector */
+
+position: absolute;
+left: 31.07%;
+right: 65.75%;
+top: 21.78%;
+bottom: 74.99%;
+
+background: #F6FBFE;
+
+
+/* Vector */
+
+position: absolute;
+left: 11.24%;
+right: 85.67%;
+top: 43.1%;
+bottom: 53.71%;
+
+background: #FFFCFC;
+
+
+/* Vector */
+
+position: absolute;
+left: 39.45%;
+right: 56.45%;
+top: 40.62%;
+bottom: 55.82%;
+
+background: #F3F6F9;
+
+
+/* Vector */
+
+position: absolute;
+left: 64.84%;
+right: 31.05%;
+top: 39.26%;
+bottom: 57.19%;
+
+background: #F4F6F9;
+
+
+/* Vector */
+
+position: absolute;
+left: 75.74%;
+right: 22.07%;
+top: 56.99%;
+bottom: 40.79%;
+
+background: #F3FAFE;
+
+
+/* Vector */
+
+position: absolute;
+left: 38.65%;
+right: 59.19%;
+top: 89.59%;
+bottom: 8.2%;
+
+background: #F8FEFD;
+
+
+/* Vector */
+
+position: absolute;
+left: 41.41%;
+right: 56.4%;
+top: 32.18%;
+bottom: 65.65%;
+
+background: #F4FBFE;
+
+
+/* Vector */
+
+position: absolute;
+left: 24.76%;
+right: 73.2%;
+top: 83.94%;
+bottom: 13.84%;
+
+background: #F9FEFD;
+
+
+/* Vector */
+
+position: absolute;
+left: 58.23%;
+right: 39.81%;
+top: 20.67%;
+bottom: 77.09%;
+
+background: #FEFDF8;
+
+
+/* Vector */
+
+position: absolute;
+left: 37.11%;
+right: 61.33%;
+top: 39.65%;
+bottom: 59.18%;
+
+background: #EEF3F7;
+
+
+/* Vector */
+
+position: absolute;
+left: 62.5%;
+right: 35.94%;
+top: 38.28%;
+bottom: 60.55%;
+
+background: #ECF1F6;
+
+
+/* Vector */
+
+position: absolute;
+left: 43.35%;
+right: 55.66%;
+top: 45.12%;
+bottom: 53.52%;
+
+background: #E9EFF4;
+
+
+/* Vector */
+
+position: absolute;
+left: 68.73%;
+right: 30.27%;
+top: 43.75%;
+bottom: 54.88%;
+
+background: #EFF3F7;

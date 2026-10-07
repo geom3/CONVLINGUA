@@ -10,7 +10,7 @@
 }
 
 body {
-  background: #0B0E14;
+  background: #141936;
   min-height: 100vh;
   overflow-x: hidden;
   font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
@@ -232,26 +232,33 @@ header nav {
 .slogan-badge {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  border-radius: 9999px;
-  padding: 8px 18px;
-  background: rgba(255, 255, 255, 0.04);
+  /* Reduced gap to bring the text closer to the bigger icon */
+  gap: 8px; 
+  border-radius: 50px;
+  
+  /* Increased top/bottom (10px) for a taller badge, reduced left/right (14px) for a narrower pill */
+  padding: 7px 10px; 
+  
+  /* Transparent background */
+  background: transparent; 
   border: 1px solid rgba(154, 161, 200, 0.25);
 }
 
 .wolf-icon {
-  width: 24px;
-  height: 24px;
+  /* Increased from 24px to make the wolf head significantly bigger */
+  width: 30px;
+  height: 30px;
   object-fit: contain;
   display: block;
   flex-shrink: 0;
+  margin-left: 10px;
 }
 
 .slogan-text {
   font-family: 'JetBrains Mono', monospace;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 11px;
   color: #8F9CAE;
   letter-spacing: 0.5px;
 }
@@ -425,3 +432,260 @@ header nav {
     font-size: clamp(28px, 7vw, 36px);
   }
 }
+
+/* ===== Approach Section ===== */
+.approach {
+  background: #141936;
+  padding: 60px 24px 120px;
+}
+
+.approach-container {
+  max-width: 1166px;
+  margin: 0 auto;
+}
+
+/* ---------- Top row ---------- */
+.approach-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.approach-left {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 644px;
+  padding: 51px 0 0 4px;
+}
+
+.approach-headline {
+  font-family: 'Russo One', sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 48px;
+  letter-spacing: -0.384px;
+  color: #F4F1FF;
+  max-width: 640px;
+  margin: 0 0 20px 0;
+}
+
+.approach-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16.3px;
+  line-height: 27px;
+  color: #9AA1C8;
+  max-width: 640px;
+}
+
+.approach-right {
+  flex: 0 0 auto;
+}
+
+.approach-visual {
+  width: 347px;
+  height: 347px;
+}
+
+.approach-visual dotlottie-wc {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------- Comparison panel (desktop: SVG frame) ---------- */
+.approach-comparison {
+  margin-top: 47px;
+}
+
+.compare-panel {
+  position: relative;
+  container-type: inline-size;
+  width: min(1102px, calc(100% + 26.8px));
+  margin-left: -13.4px; /* lines the card edge up with the text edge */
+  aspect-ratio: 1102 / 316;
+  background: url('assets/approach/comparison.svg') center / 100% 100% no-repeat;
+}
+
+/* --u = 1 unit of the 1102px-wide SVG, so everything scales with the panel */
+.compare-left,
+.compare-right {
+  --u: calc(100cqw / 1102);
+  position: absolute;
+  top: calc(var(--u) * 42.66);
+  width: calc(var(--u) * 458.96);
+}
+
+.compare-left {
+  left: calc(var(--u) * 52.93);
+  opacity: 0.72;
+}
+
+.compare-right {
+  left: calc(var(--u) * 589.91);
+  padding-top: calc(var(--u) * 48.49); /* room for the wordmark drawn in the SVG */
+}
+
+.compare-heading {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: calc(var(--u) * 16.1828);
+  line-height: calc(var(--u) * 20);
+  letter-spacing: calc(var(--u) * -0.1618);
+  color: #9AA1C8;
+  margin: 0 0 calc(var(--u) * 28) 0;
+}
+
+.compare-item {
+  position: relative;
+  padding-left: calc(var(--u) * 21.1918);
+}
+
+.compare-left .compare-item + .compare-item {
+  margin-top: calc(var(--u) * 14.64);
+}
+
+.compare-right .compare-item + .compare-item {
+  margin-top: calc(var(--u) * 14.55);
+}
+
+.compare-item-text {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: calc(var(--u) * 14.8342);
+  line-height: calc(var(--u) * 23);
+}
+
+.compare-left .compare-item-text { color: #9AA1C8; }
+.compare-right .compare-item-text { color: #F4F1FF; }
+
+/* The SVG already draws these on desktop, so hide the HTML copies */
+.compare-item-dash,
+.compare-item-dot {
+  display: none;
+}
+
+/* Wordmark is in the SVG too: keep it for screen readers only */
+.compare-wordmark {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ---------- Tablet / mobile: stacked, CSS-built frame ---------- */
+@media (max-width: 1024px) {
+  .approach-top {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .approach-left {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .approach-headline {
+    font-size: clamp(32px, 6vw, 50px);
+    line-height: 0.96;
+  }
+
+  .approach-right {
+    align-self: center;
+  }
+
+  .approach-visual {
+    width: 260px;
+    height: 260px;
+  }
+
+  .approach-comparison {
+    margin-top: 40px;
+  }
+
+  .compare-panel {
+    container-type: normal;
+    width: 100%;
+    margin-left: 0;
+    aspect-ratio: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    background:
+      linear-gradient(180deg, rgba(0, 115, 255, 0) 0%, rgba(13, 162, 255, 0.4) 100%),
+      #141936;
+    border: 1px solid rgba(210, 234, 255, 0.35);
+    box-shadow:
+      inset 0 1px 4px 2px #D2EAFF,
+      0 10px 13px rgba(87, 177, 255, 0.22),
+      0 4px 5px rgba(87, 177, 255, 0.15);
+  }
+
+  .compare-left,
+  .compare-right {
+    --u: 1px; /* back to plain pixels */
+    position: static;
+    width: auto;
+    padding: 38.53px;
+  }
+
+  .compare-left {
+    border-bottom: 1px solid rgba(87, 177, 255, 0.25);
+  }
+
+  .compare-right {
+    padding-top: 38.53px;
+  }
+
+  .compare-wordmark {
+    position: static;
+    width: auto;
+    height: 30px;
+    overflow: visible;
+    clip: auto;
+    display: block;
+    margin-bottom: 18.49px;
+  }
+
+  .compare-item-dash,
+  .compare-item-dot {
+    display: block;
+    position: absolute;
+    left: 0;
+  }
+
+  .compare-item-dash {
+    top: 9.44px;
+    width: 7.71px;
+    height: 1.44px;
+    background: #7B82AC;
+  }
+
+  .compare-item-dot {
+    top: 7.51px;
+    width: 5.78px;
+    height: 5.78px;
+    border-radius: 2.89px;
+    background: #4EE6D2;
+    box-shadow: 0 0 7.7px #4EE6D2;
+  }
+}
+
+@media (max-width: 480px) {
+  .approach {
+    padding: 40px 16px 80px;
+  }
+
+  .compare-left,
+  .compare-right {
+    padding: 24px 20px;
+  }
+}
+
+   .approach-visual { overflow: visible; }
+   #approach-globe,
+   #approach-globe svg { width: 100%; height: 100%; display: block; overflow: visible; }
