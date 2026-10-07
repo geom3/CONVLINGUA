@@ -3,25 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CONVLINGUA is a managed team of senior bilingual Arabic/English evaluators for AI data pipelines.">
   <title>CONVLINGUA</title>
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-  <!-- 1. Dedicated import for Orbitron (Wordmark) and Inter (Paragraph) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Orbitron:wght@800&display=swap" rel="stylesheet">
-  
-  <!-- 2. Import for your Headlines and Navigation -->
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Rubik+Doodle+Shadow&family=Russo+One&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&family=Orbitron:wght@800&family=Rubik+Doodle+Shadow&family=Russo+One&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
-  <script type="module" src="https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-wc@0.8/dist/dotlottie-wc.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 <body>
   <header>
-    <nav>
+    <nav aria-label="Main">
       <div class="logo-wrapper">
         <img src="assets/navbar/navbar_logo.png" alt="CONVLINGUA" class="logo">
       </div>
@@ -31,97 +26,109 @@
         <a href="#process">Process</a>
         <a href="#contact">Contact</a>
       </div>
-      <!-- Fixed: Navbar Button Dual-Image Swap -->
       <a href="#pilot" class="nav-btn-custom">Request a pilot</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-grid">
-      <div class="hero-content">
-        <h1>AI doesn't scale on<br>translation. It scales<br>on <span class="rubik-meaning">meaning</span><span class="dot">.</span></h1>
-       <p class="description">
-  <img src="assets/hero/convlingua_text.svg" alt="CONVLINGUA" class="wordmark-img"> is a managed team of senior bilingual Arabic/English evaluators, built for the exact friction AI startups hit when a data pipeline has to cross a language and a culture at once. No fragmented freelancers, no QA gaps, just one accountable team, one review layer, and one point of contact, across every dialect you ship to.
-</p>
-        <div class="slogan-badge">
-          <img src="assets/hero/wolf_logo.svg" alt="" class="wolf-icon">
-          <span class="slogan-text">where meaning lands as intended</span>
-        </div>
-        
-        <!-- Fixed: Hero Buttons Dual-Image Swap -->
-        <div class="hero-actions">
-          <a href="#pilot-batch" class="btn-asset-wrap" aria-label="Request a pilot batch">
-            <img src="assets/hero/request_button_default.svg" alt="Request a pilot batch" class="btn-default">
-            <img src="assets/hero/request_button_hover.svg" alt="Request a pilot batch" class="btn-hover">
-          </a>
-          <a href="#capabilities" class="btn-asset-wrap" aria-label="See our capabilities">
-            <img src="assets/hero/capabilities_button_default.svg" alt="See our capabilities" class="btn-default">
-            <img src="assets/hero/capabilities_button_hover.svg" alt="See our capabilities" class="btn-hover">
-          </a>
+  <main>
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1>AI doesn't scale on<br>translation. It scales<br>on <span class="rubik-meaning">meaning</span>.</h1>
+
+          <p class="description">
+            <img src="assets/hero/convlingua_text.svg" alt="CONVLINGUA" class="wordmark-img"> is a managed team of senior bilingual Arabic/English evaluators, built for the exact friction AI startups hit when a data pipeline has to cross a language and a culture at once. No fragmented freelancers, no QA gaps, just one accountable team, one review layer, and one point of contact, across every dialect you ship to.
+          </p>
+
+          <div class="slogan-badge">
+            <img src="assets/hero/wolf_logo.svg" alt="" class="wolf-icon">
+            <span class="slogan-text">where meaning lands as intended</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#pilot-batch" class="btn-asset-wrap" aria-label="Request a pilot batch">
+              <img src="assets/hero/request_button_default.svg" alt="" class="btn-default">
+              <img src="assets/hero/request_button_hover.svg" alt="" class="btn-hover">
+            </a>
+            <a href="#capabilities" class="btn-asset-wrap" aria-label="See our capabilities">
+              <img src="assets/hero/capabilities_button_default.svg" alt="" class="btn-default">
+              <img src="assets/hero/capabilities_button_hover.svg" alt="" class="btn-hover">
+            </a>
+          </div>
         </div>
 
-      </div>
-      <div class="hero-artwork">
-        <img src="assets/hero/hero_colored_lines.png" alt="" class="artwork-img">
-      </div>
-    </div>
-  </section>
-  <section class="approach" id="approach">
-    <div class="approach-container">
-      <div class="approach-top">
-        <div class="approach-left">
-          <h2 class="approach-headline">The same word doesn't<br>mean the<br>same thing twice.</h2>
-          <p class="approach-text">
-            The problem with scaling dialect: most pipelines are built to catch mistranslation, but few are built to catch the response that's technically correct and still lands wrong ,off register and dialect, missing the cultural beat that a fragmented freelance pool won't reliably catch.
-          </p>
-        </div>
-        <div class="approach-right">
-          <div class="approach-visual">
-              <div id="approach-globe" role="img" aria-label="Animated globe"></div>
-          </div>
+        <div class="hero-artwork">
+          <img src="assets/hero/hero_colored_lines.png" alt="" class="artwork-img">
         </div>
       </div>
-      <div class="approach-comparison">
-        <div class="compare-panel">
-          <div class="compare-left">
-            <h3 class="compare-heading">Fragmented freelance pools</h3>
-            <div class="compare-item">
-              <span class="compare-item-dash"></span>
-              <span class="compare-item-text">Inconsistent rubric interpretation across contributors</span>
-            </div>
-            <div class="compare-item">
-              <span class="compare-item-dash"></span>
-              <span class="compare-item-text">No shared quality bar between batches</span>
-            </div>
-            <div class="compare-item">
-              <span class="compare-item-dash"></span>
-              <span class="compare-item-text">Dialect coverage depends on who's online that day</span>
-            </div>
-            <div class="compare-item">
-              <span class="compare-item-dash"></span>
-              <span class="compare-item-text">QA happens after delivery, if at all</span>
-            </div>
+    </section>
+
+    <section class="approach" id="approach">
+      <div class="approach-container">
+        <div class="approach-top">
+          <div class="approach-left">
+            <h2 class="approach-headline">The same word doesn't<br>mean the<br>same thing twice.</h2>
+            <p class="approach-text">
+              The problem with scaling dialect: most pipelines are built to catch mistranslation, but few are built to catch the response that's technically correct and still lands wrong, off register and dialect, missing the cultural beat that a fragmented freelance pool won't reliably catch.
+            </p>
           </div>
-          <div class="compare-right">
-            <img src="assets/hero/convlingua_textonly.png" alt="CONVLINGUA" class="compare-wordmark" width="30">
-            <div class="compare-item">
-              <span class="compare-item-dot"></span>
-              <span class="compare-item-text">One managed team, briefed on the same rubric</span>
-            </div>
-            <div class="compare-item">
-              <span class="compare-item-dot"></span>
-              <span class="compare-item-text">Senior evaluators review every batch before delivery</span>
-            </div>
-            <div class="compare-item">
-              <span class="compare-item-dot"></span>
-              <span class="compare-item-text">Deliberate coverage across Gulf, Egyptian, English world-wide, Maghreb, MSA and more</span>
-            </div>
-            <div class="compare-item">
-              <span class="compare-item-dot"></span>
-              <span class="compare-item-text">QA is a layer in the pipeline, not an afterthought</span>
+
+          <div class="approach-right">
+            <div class="approach-visual">
+              <div id="approach-globe" class="approach-globe" role="img" aria-label="Animated globe showing the dialects we cover"></div>
             </div>
           </div>
         </div>
+
+        <div class="approach-comparison">
+          <div class="compare-panel">
+            <div class="compare-left">
+              <h3 class="compare-heading">Fragmented freelance pools</h3>
+              <ul class="compare-list">
+                <li class="compare-item">
+                  <span class="compare-item-dash"></span>
+                  <span class="compare-item-text">Inconsistent rubric interpretation across contributors</span>
+                </li>
+                <li class="compare-item">
+                  <span class="compare-item-dash"></span>
+                  <span class="compare-item-text">No shared quality bar between batches</span>
+                </li>
+                <li class="compare-item">
+                  <span class="compare-item-dash"></span>
+                  <span class="compare-item-text">Dialect coverage depends on who's online that day</span>
+                </li>
+                <li class="compare-item">
+                  <span class="compare-item-dash"></span>
+                  <span class="compare-item-text">QA happens after delivery, if at all</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="compare-right">
+              <img src="assets/hero/convlingua_textonly.png" alt="CONVLINGUA" class="compare-wordmark">
+              <ul class="compare-list">
+                <li class="compare-item">
+                  <span class="compare-item-dot"></span>
+                  <span class="compare-item-text">One managed team, briefed on the same rubric</span>
+                </li>
+                <li class="compare-item">
+                  <span class="compare-item-dot"></span>
+                  <span class="compare-item-text">Senior evaluators review every batch before delivery</span>
+                </li>
+                <li class="compare-item">
+                  <span class="compare-item-dot"></span>
+                  <span class="compare-item-text">Deliberate coverage across Gulf, Egyptian, English world-wide, Maghreb, MSA and more</span>
+                </li>
+                <li class="compare-item">
+                  <span class="compare-item-dot"></span>
+                  <span class="compare-item-text">QA is a layer in the pipeline, not an afterthought</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
+</body>
+</html>

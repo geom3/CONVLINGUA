@@ -1,6 +1,21 @@
-/* ============================================
-   Reset & Base
-   ============================================ */
+/* ==========================================================================
+   Design tokens
+   ========================================================================== */
+:root {
+  --color-bg: #141936;
+  --color-text: #F4F1FF;
+  --color-muted: #9AA1C8;
+  --color-accent: #4EE6D2;
+
+  --font-display: 'Russo One', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-ui: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* ==========================================================================
+   Reset & base
+   ========================================================================== */
 *,
 *::before,
 *::after {
@@ -10,82 +25,72 @@
 }
 
 body {
-  background: #141936;
   min-height: 100vh;
   overflow-x: hidden;
-  font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
-  color: #F4F1FF;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-ui);
 }
 
 a {
   text-decoration: none;
 }
 
-/* ============================================
-   Navbar / Header — Floating Pill Container
-   ============================================ */
-/* ============================================
-   Navbar / Header 
-   ============================================ */
-header {
-  /* Brought down to a contained floating size */
-  max-width: 1200px; 
-  height: 64px; 
-  margin: 24px auto 0 auto;
-  border-radius: 18px; 
-  
-  background: rgba(8, 10, 15, 0.4);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  
-  border: 1px solid rgba(255, 255, 255, 0.6); 
-  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.15);
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
 
-  /* Clean, uniform padding */
-  padding: 0 32px;
-  
-  display: flex;
-  align-items: center;
+/* ==========================================================================
+   Header
+   ========================================================================== */
+header {
   position: relative;
   z-index: 10;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  height: 64px;
+  margin: 24px auto 0;
+  padding: 0 32px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 18px;
+  background: rgba(8, 10, 15, 0.4);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
 }
 
 header nav {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   gap: 24px;
+  width: 100%;
 }
 
 .logo-wrapper {
-  background: transparent;
   display: flex;
   align-items: center;
   flex-shrink: 0;
 }
 
 .logo {
+  display: block;
   width: 180px;
   height: auto;
-  object-fit: contain;
-  background: transparent;
-  display: block;
 }
 
 .nav-links {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 36px;
   flex: 1;
-  justify-content: center;
 }
 
 .nav-links a {
-  font-family: 'Space Grotesk', sans-serif;
-  font-style: normal;
+  font-family: var(--font-ui);
   font-weight: 600;
   font-size: 15px;
   color: #E8E9EF;
@@ -93,261 +98,36 @@ header nav {
 }
 
 .nav-links a:hover {
-  color: #9AA1C8;
+  color: var(--color-muted);
 }
 
-/* ============================================
-   Custom CSS Navbar Button (Stronger Gradient & Glow Restored)
-   ============================================ */
 .nav-btn-custom {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 11px 20px; 
-  font-family: 'Space Grotesk', sans-serif;
+  padding: 11px 20px;
+  border: 1px solid rgba(123, 140, 255, 0.6);
+  border-radius: 8px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #D8DFFF 45%, #7B8CFF 100%);
+  box-shadow:
+    0 0 20px rgba(42, 60, 222, 0.42),
+    0 0 15px rgba(42, 60, 222, 0.47);
+  font-family: var(--font-ui);
   font-weight: 700;
   font-size: 15px;
   color: #0B0E14;
-  border-radius: 8px;
-  text-decoration: none;
-  
-  /* 1. Stronger Gradient: more visible transition to blue/purple, but calmer than the original #5F6FFF */
-  background: linear-gradient(180deg, #FFFFFF 0%, #D8DFFF 45%, #7B8CFF 100%);
-  
-  /* 2. Inner Border matching the gradient's bottom edge */
-  border: 1px solid rgba(123, 140, 255, 0.6);
-  
-  /* 3. Restored Glow: Using the exact opacities (42% and 47%) from your Figma shadows */
-  box-shadow: 
-    0px 0px 20px 0px rgba(42, 60, 222, 0.42),
-    0px 0px 15px 0px rgba(42, 60, 222, 0.47);
-    
-  /* Instant hover swap */
-  transition: none; 
 }
 
 .nav-btn-custom:hover {
-  /* Exact hover properties from your hover.PNG layout */
+  border-color: var(--color-text);
   background: #C2BDD7;
-  border: 1px solid #F4F1FF;
-  box-shadow: none; 
-}
-
-/* ============================================
-   Hero Section — Two-Column Flex Layout
-   ============================================ */
-.hero {
-  width: 100%;
-  min-height: calc(100vh - 100px);
-  /* Increased top padding to push the content lower */
-  padding: 100px 0 80px 0; 
-  position: relative;
-}
-
-.hero-grid {
-  /* Exactly matches the navbar width */
-  max-width: 1200px; 
-  margin: 0 auto;
-  /* Exactly matches the navbar padding so the 'A' in 'AI' perfectly lines up with your logo */
-  padding: 0 32px; 
-  
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-/* Left Column */
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 36px; 
-  flex: 1;
-  /* Greatly increased width to give "translation. It scales" room to fit */
-  max-width: 900px; 
-}
-
-/* Headline */
-.hero h1 {
-  font-family: 'Russo One', sans-serif;
-  font-weight: 400; 
-  font-size: 60px; 
-  line-height: 70.85px; 
-  letter-spacing: -0.66px;
-  color: #F4F1FF;
-  max-width: 100%;
-
-  white-space: nowrap;
-  
-}
-
-.rubik-meaning {
-  font-family: 'Rubik Doodle Shadow', cursive;
-  font-weight: 400; /* Strictly 400 to preserve the hollow hatch lines */
-  font-size: 1.133em; /* Scales perfectly to 68px relative to the 60px header */
-  letter-spacing: -0.66px;
-  display: inline-block;
-  
-  /* Updated exact Figma gradient colors */
-  background: linear-gradient(135deg, #4EE6D2 0%, #6C8CF5 50%, #A177E8 100%);
-  
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  vertical-align: middle;
-  margin-top: -5px;
-  padding-bottom: 12px;
-  padding-right: 8px;
-}
-
-/* Paragraph */
-.description {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400; /* Regular weight */
-  font-size: 18.1px; /* Exact Figma size */
-  line-height: 29.8px; /* Exact Figma line height */
-  letter-spacing: 0px; /* Exact Figma spacing */
-  color: #9AA1C8; /* Solid base color for the text */
-  max-width: 720px; 
-}
-
-.wordmark-img {
-  height: 13px; /* Shrunk down from 19px */
-  width: auto;
-  display: inline-block;
-  vertical-align: baseline; 
-  position: relative;
-  
-  /* Adjusted slightly for the new smaller size */
-  top: 1px; 
-  
-  /* Pulled much closer to the word "is" */
-  margin-right: 2px; 
-}
-
-/* Slogan Badge */
-.slogan-badge {
-  display: inline-flex;
-  align-items: center;
-  /* Reduced gap to bring the text closer to the bigger icon */
-  gap: 8px; 
-  border-radius: 50px;
-  
-  /* Increased top/bottom (10px) for a taller badge, reduced left/right (14px) for a narrower pill */
-  padding: 7px 10px; 
-  
-  /* Transparent background */
-  background: transparent; 
-  border: 1px solid rgba(154, 161, 200, 0.25);
-}
-
-.wolf-icon {
-  /* Increased from 24px to make the wolf head significantly bigger */
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-  display: block;
-  flex-shrink: 0;
-  margin-left: 10px;
-}
-
-.slogan-text {
-  font-family: 'JetBrains Mono', monospace;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 11px;
-  color: #8F9CAE;
-  letter-spacing: 0.5px;
-}
-
-/* ============================================
-   Bulletproof Image-Based Buttons
-   ============================================ */
-.btn-asset-wrap {
-  display: inline-block;
-  line-height: 0;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.btn-asset-wrap img {
-  display: block;
-  height: auto;
-  max-height: 48px;
-  width: auto;
-  pointer-events: none;
-}
-
-.btn-asset-wrap .btn-hover {
-  display: none;
-}
-
-.btn-asset-wrap:hover .btn-default {
-  display: none;
-}
-
-.btn-asset-wrap:hover .btn-hover {
-  display: block;
-}
-
-.hero-actions {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-top: 12px;
-}
-
-/* Right Column Artwork */
-.hero-artwork {
-  flex: 0 0 45%;
-  display: flex;
-  align-items: flex-start; 
-  justify-content: flex-end; 
-  
-  /* Increased negative margins to compensate for the massive new size */
-  margin-top: -320px;
-  margin-right: -160px; 
-}
-
-.artwork-img {
-  /* The Fix: Hard pixel width forces it to grow past its container */
-  width: 600px; 
-  max-width: none; /* Removes the previous limit */
-  height: auto;
-  object-fit: contain;
-  pointer-events: none;
-  display: block;
-}
-
-/* ============================================
-   Responsive Media Queries
-   ============================================ */
-@media (max-width: 1100px) {
-  .hero-grid {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 48px;
-  }
-
-  .hero-artwork {
-    flex: 0 0 auto;
-    max-width: 400px;
-    align-self: center;
-  }
-
-  .hero-content {
-    max-width: 100%;
-  }
+  box-shadow: none;
 }
 
 @media (max-width: 768px) {
   header {
     max-width: calc(100% - 40px);
     padding: 10px 20px;
-    border-radius: 18px;
   }
 
   header nav {
@@ -365,28 +145,213 @@ header nav {
   .nav-links a {
     font-size: 13px;
   }
+}
 
+@media (max-width: 480px) {
+  header {
+    max-width: calc(100% - 24px);
+    margin-top: 10px;
+    padding: 8px 14px;
+  }
+
+  .logo {
+    width: 110px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+.hero {
+  position: relative;
+  min-height: calc(100vh - 100px);
+  padding: 100px 0 80px;
+}
+
+.hero-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px; /* matches the header so the headline lines up with the logo */
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36px;
+  flex: 1;
+  max-width: 900px;
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 70.85px;
+  letter-spacing: -0.66px;
+  white-space: nowrap;
+  color: var(--color-text);
+}
+
+.rubik-meaning {
+  display: inline-block;
+  margin-top: -5px;
+  padding-right: 8px;
+  padding-bottom: 12px;
+  font-family: 'Rubik Doodle Shadow', cursive;
+  font-weight: 400; /* keep at 400 so the hollow hatch lines render */
+  font-size: 1.133em;
+  letter-spacing: -0.66px;
+  vertical-align: middle;
+  background: linear-gradient(135deg, var(--color-accent) 0%, #6C8CF5 50%, #A177E8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.description {
+  max-width: 720px;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 18.1px;
+  line-height: 29.8px;
+  color: var(--color-muted);
+}
+
+.wordmark-img {
+  position: relative;
+  top: 1px;
+  height: 13px;
+  width: auto;
+  margin-right: 2px;
+  vertical-align: baseline;
+}
+
+.slogan-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border: 1px solid rgba(154, 161, 200, 0.25);
+  border-radius: 50px;
+}
+
+.wolf-icon {
+  display: block;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  object-fit: contain;
+}
+
+.slogan-text {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: #8F9CAE;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+/* Image buttons: the hover image replaces the default one */
+.btn-asset-wrap {
+  display: inline-block;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.btn-asset-wrap img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-height: 48px;
+  pointer-events: none;
+}
+
+.btn-asset-wrap .btn-hover {
+  display: none;
+}
+
+.btn-asset-wrap:is(:hover, :focus-visible) .btn-default {
+  display: none;
+}
+
+.btn-asset-wrap:is(:hover, :focus-visible) .btn-hover {
+  display: block;
+}
+
+.hero-artwork {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex: 0 0 45%;
+  margin-top: -320px;
+  margin-right: -160px;
+}
+
+.artwork-img {
+  display: block;
+  width: 600px;
+  max-width: none; /* let it grow past its column */
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+@media (max-width: 1100px) {
+  .hero-grid {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-artwork {
+    flex: 0 0 auto;
+    align-self: center;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
   .btn-asset-wrap img {
     max-height: 36px;
   }
 
   .hero {
-    padding: 32px 0 48px 0;
+    padding: 32px 0 48px;
   }
 
   .hero-grid {
-    padding: 0 20px;
     gap: 36px;
+    padding: 0 20px;
   }
 
   .hero h1 {
     font-size: clamp(32px, 8vw, 44px);
-    max-width: 100%;
   }
 
   .description {
-    font-size: 14px;
     max-width: 100%;
+    font-size: 14px;
   }
 
   .slogan-badge {
@@ -414,28 +379,15 @@ header nav {
 }
 
 @media (max-width: 480px) {
-  header {
-    max-width: calc(100% - 24px);
-    padding: 8px 14px;
-    margin-top: 10px;
-  }
-
-  .logo {
-    width: 110px;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
   .hero h1 {
     font-size: clamp(28px, 7vw, 36px);
   }
 }
 
-/* ===== Approach Section ===== */
+/* ==========================================================================
+   Approach
+   ========================================================================== */
 .approach {
-  background: #141936;
   padding: 60px 24px 120px;
 }
 
@@ -444,11 +396,10 @@ header nav {
   margin: 0 auto;
 }
 
-/* ---------- Top row ---------- */
 .approach-top {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
+  justify-content: space-between;
   gap: 48px;
 }
 
@@ -460,23 +411,23 @@ header nav {
 }
 
 .approach-headline {
-  font-family: 'Russo One', sans-serif;
+  max-width: 640px;
+  margin-bottom: 20px;
+  font-family: var(--font-display);
   font-weight: 400;
   font-size: 50px;
   line-height: 48px;
   letter-spacing: -0.384px;
-  color: #F4F1FF;
-  max-width: 640px;
-  margin: 0 0 20px 0;
+  color: var(--color-text);
 }
 
 .approach-text {
-  font-family: 'Inter', sans-serif;
+  max-width: 640px;
+  font-family: var(--font-body);
   font-weight: 400;
   font-size: 16.3px;
   line-height: 27px;
-  color: #9AA1C8;
-  max-width: 640px;
+  color: var(--color-muted);
 }
 
 .approach-right {
@@ -486,98 +437,21 @@ header nav {
 .approach-visual {
   width: 347px;
   height: 347px;
+  overflow: visible;
 }
 
-.approach-visual dotlottie-wc {
+.approach-globe,
+.approach-globe svg {
   display: block;
   width: 100%;
   height: 100%;
+  overflow: visible;
 }
 
-/* ---------- Comparison panel (desktop: SVG frame) ---------- */
 .approach-comparison {
   margin-top: 47px;
 }
 
-.compare-panel {
-  position: relative;
-  container-type: inline-size;
-  width: min(1102px, calc(100% + 26.8px));
-  margin-left: -13.4px; /* lines the card edge up with the text edge */
-  aspect-ratio: 1102 / 316;
-  background: url('assets/approach/comparison.svg') center / 100% 100% no-repeat;
-}
-
-/* --u = 1 unit of the 1102px-wide SVG, so everything scales with the panel */
-.compare-left,
-.compare-right {
-  --u: calc(100cqw / 1102);
-  position: absolute;
-  top: calc(var(--u) * 42.66);
-  width: calc(var(--u) * 458.96);
-}
-
-.compare-left {
-  left: calc(var(--u) * 52.93);
-  opacity: 0.72;
-}
-
-.compare-right {
-  left: calc(var(--u) * 589.91);
-  padding-top: calc(var(--u) * 48.49); /* room for the wordmark drawn in the SVG */
-}
-
-.compare-heading {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: calc(var(--u) * 16.1828);
-  line-height: calc(var(--u) * 20);
-  letter-spacing: calc(var(--u) * -0.1618);
-  color: #9AA1C8;
-  margin: 0 0 calc(var(--u) * 28) 0;
-}
-
-.compare-item {
-  position: relative;
-  padding-left: calc(var(--u) * 21.1918);
-}
-
-.compare-left .compare-item + .compare-item {
-  margin-top: calc(var(--u) * 14.64);
-}
-
-.compare-right .compare-item + .compare-item {
-  margin-top: calc(var(--u) * 14.55);
-}
-
-.compare-item-text {
-  display: block;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: calc(var(--u) * 14.8342);
-  line-height: calc(var(--u) * 23);
-}
-
-.compare-left .compare-item-text { color: #9AA1C8; }
-.compare-right .compare-item-text { color: #F4F1FF; }
-
-/* The SVG already draws these on desktop, so hide the HTML copies */
-.compare-item-dash,
-.compare-item-dot {
-  display: none;
-}
-
-/* Wordmark is in the SVG too: keep it for screen readers only */
-.compare-wordmark {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
-}
-
-/* ---------- Tablet / mobile: stacked, CSS-built frame ---------- */
 @media (max-width: 1024px) {
   .approach-top {
     flex-direction: column;
@@ -585,8 +459,8 @@ header nav {
   }
 
   .approach-left {
-    padding: 0;
     max-width: 100%;
+    padding: 0;
   }
 
   .approach-headline {
@@ -606,21 +480,123 @@ header nav {
   .approach-comparison {
     margin-top: 40px;
   }
+}
 
+@media (max-width: 480px) {
+  .approach {
+    padding: 40px 16px 80px;
+  }
+}
+
+/* ==========================================================================
+   Comparison panel
+   Desktop: the SVG draws the frame, dividers, dashes, dots and wordmark.
+   Text is HTML laid over it. --u is one unit of the 1102px-wide SVG, so
+   everything scales with the panel width.
+   ========================================================================== */
+.compare-panel {
+  position: relative;
+  container-type: inline-size;
+  width: min(1000px, 100%);
+  margin-left: 38px; /* lines the card edge up with the text edge */
+  aspect-ratio: 1102 / 316;
+  background: url('assets/approach/comparison.svg') center / 100% 100% no-repeat;
+}
+
+.compare-left,
+.compare-right {
+  --u: calc(100cqw / 1102);
+  position: absolute;
+  top: calc(var(--u) * 42.66);
+  width: calc(var(--u) * 458.96);
+}
+
+.compare-left {
+  left: calc(var(--u) * 52.93);
+  opacity: 0.72;
+}
+
+.compare-right {
+  left: calc(var(--u) * 589.91);
+  padding-top: calc(var(--u) * 48.49); /* room for the wordmark drawn in the SVG */
+}
+
+.compare-heading {
+  margin-bottom: calc(var(--u) * 28);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: calc(var(--u) * 16.1828);
+  line-height: calc(var(--u) * 20);
+  letter-spacing: calc(var(--u) * -0.1618);
+  color: var(--color-muted);
+}
+
+.compare-list {
+  list-style: none;
+}
+
+.compare-item {
+  position: relative;
+  padding-left: calc(var(--u) * 21.1918);
+}
+
+.compare-left .compare-item + .compare-item {
+  margin-top: calc(var(--u) * 14.64);
+}
+
+.compare-right .compare-item + .compare-item {
+  margin-top: calc(var(--u) * 14.55);
+}
+
+.compare-item-text {
+  display: block;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: calc(var(--u) * 14.8342);
+  line-height: calc(var(--u) * 23);
+}
+
+.compare-left .compare-item-text {
+  color: var(--color-muted);
+}
+
+.compare-right .compare-item-text {
+  color: var(--color-text);
+}
+
+/* Already drawn by the SVG on desktop */
+.compare-item-dash,
+.compare-item-dot {
+  display: none;
+}
+
+/* Wordmark is in the SVG too: keep it for screen readers only */
+.compare-wordmark {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Tablet / mobile: stacked layout with a CSS-built frame */
+@media (max-width: 1024px) {
   .compare-panel {
     container-type: normal;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin-left: 0;
     aspect-ratio: auto;
-    display: flex;
-    flex-direction: column;
+    border: 1px solid rgba(210, 234, 255, 0.35);
     border-radius: 12px;
     background:
       linear-gradient(180deg, rgba(0, 115, 255, 0) 0%, rgba(13, 162, 255, 0.4) 100%),
-      #141936;
-    border: 1px solid rgba(210, 234, 255, 0.35);
+      var(--color-bg);
     box-shadow:
-      inset 0 1px 4px 2px #D2EAFF,
+      inset 0 0.6px 1px 0.7px #D2EAFF,
       0 10px 13px rgba(87, 177, 255, 0.22),
       0 4px 5px rgba(87, 177, 255, 0.15);
   }
@@ -637,25 +613,21 @@ header nav {
     border-bottom: 1px solid rgba(87, 177, 255, 0.25);
   }
 
-  .compare-right {
-    padding-top: 38.53px;
-  }
-
   .compare-wordmark {
     position: static;
+    display: block;
     width: auto;
     height: 30px;
+    margin: 0 0 18.49px;
     overflow: visible;
-    clip: auto;
-    display: block;
-    margin-bottom: 18.49px;
+    clip-path: none;
   }
 
   .compare-item-dash,
   .compare-item-dot {
-    display: block;
     position: absolute;
     left: 0;
+    display: block;
   }
 
   .compare-item-dash {
@@ -670,22 +642,14 @@ header nav {
     width: 5.78px;
     height: 5.78px;
     border-radius: 2.89px;
-    background: #4EE6D2;
-    box-shadow: 0 0 7.7px #4EE6D2;
+    background: var(--color-accent);
+    box-shadow: 0 0 7.7px var(--color-accent);
   }
 }
 
 @media (max-width: 480px) {
-  .approach {
-    padding: 40px 16px 80px;
-  }
-
   .compare-left,
   .compare-right {
     padding: 24px 20px;
   }
 }
-
-   .approach-visual { overflow: visible; }
-   #approach-globe,
-   #approach-globe svg { width: 100%; height: 100%; display: block; overflow: visible; }

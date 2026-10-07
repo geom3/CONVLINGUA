@@ -1,16 +1,14 @@
-const globeEl = document.getElementById('approach-globe');
+// Globe animation in the Approach section (lottie-web is loaded in index.html)
+const globeContainer = document.getElementById('approach-globe');
 
-if (!globeEl) {
-  console.error('Globe: no element with id="approach-globe" in the HTML');
-} else if (!window.lottie) {
-  console.error('Globe: lottie-web did not load (check the <script> tag before script.js)');
-} else {
-  console.log('Globe: starting animation');
+if (globeContainer && window.lottie) {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   lottie.loadAnimation({
-    container: globeEl,
+    container: globeContainer,
     renderer: 'svg',
     loop: true,
-    autoplay: true,
-    path: 'assets/approach/globe.json'
+    autoplay: !reduceMotion,
+    path: 'assets/approach/globe.json',
   });
 }
