@@ -1021,3 +1021,212 @@ header nav {
     padding: 32px 20px;
   }
 }
+
+/* ==========================================================================
+   Process
+   Desktop: laid out on the Figma grid. --u is one unit of the 1180px-wide
+   frame, so positions and type scale with the container width.
+   ========================================================================== */
+.process {
+  padding: 40px 24px 80px;
+}
+
+.process-container {
+  container-type: inline-size;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.process-stage {
+  --u: calc(100cqw / 1180);
+  position: relative;
+  aspect-ratio: 1180 / 480; /* trimmed to the cards' bottom edge (Figma frame is 592 tall) */
+}
+
+.process-headline {
+  position: absolute;
+  top: 0;
+  left: calc(var(--u) * 32);
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: calc(var(--u) * 38.4);
+  line-height: calc(var(--u) * 48);
+  letter-spacing: calc(var(--u) * -0.384);
+  white-space: nowrap;
+  color: var(--color-text);
+}
+
+.process-intro {
+  position: absolute;
+  top: calc(var(--u) * 125);
+  left: calc(var(--u) * 32);
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: calc(var(--u) * 16.3);
+  line-height: calc(var(--u) * 27);
+  white-space: nowrap;
+  color: var(--color-muted);
+}
+
+.process-steps {
+  list-style: none;
+}
+
+.process-step {
+  position: absolute;
+  top: calc(var(--u) * 371.7);
+  left: calc(var(--u) * var(--x));
+  width: calc(var(--u) * 350.7);
+  height: calc(var(--u) * 105.1);
+  background: var(--card-bg) center / 100% 100% no-repeat;
+}
+
+/* Per-card values. Numbers are unitless on purpose: they get multiplied by --u. */
+.process-step:nth-child(1) {
+  --x: 32;
+  --wolf-x: 123.1;
+  --wolf-y: -130.1;
+  --text-x: 14;
+  --text-y: 45;
+  --text-w: 323;
+  --tint: 56, 253, 182;
+  --text-color: #AFAFAF;
+  --card-bg: url('assets/process/background_green.svg');
+}
+
+.process-step:nth-child(2) {
+  --x: 414.66;
+  --wolf-x: 126.5;
+  --wolf-y: -144.6;
+  --text-x: 19.34;
+  --text-y: 28.3;
+  --text-w: 311;
+  --tint: 30, 214, 255;
+  --text-color: #AAAEC0;
+  --card-bg: url('assets/process/background_blue.svg');
+}
+
+.process-step:nth-child(3) {
+  --x: 797.32;
+  --wolf-x: 126.8;
+  --wolf-y: -144.6;
+  --text-x: 16.68;
+  --text-y: 28.3;
+  --text-w: 327;
+  --tint: 161, 98, 247;
+  --text-color: #ACB0CA;
+  --card-bg: url('assets/process/background_purple.svg');
+}
+
+.process-wolf {
+  position: absolute;
+  top: calc(var(--u) * var(--wolf-y));
+  left: calc(var(--u) * var(--wolf-x));
+  width: calc(var(--u) * 93);
+  height: calc(var(--u) * 96);
+  pointer-events: none;
+}
+
+.process-step-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: calc(var(--u) * 17.3);
+  line-height: calc(var(--u) * 22);
+  letter-spacing: calc(var(--u) * -0.173);
+  text-align: center;
+  color: var(--color-text);
+}
+
+.process-step-text {
+  position: absolute;
+  top: calc(var(--u) * var(--text-y));
+  left: calc(var(--u) * var(--text-x));
+  width: calc(var(--u) * var(--text-w));
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: calc(var(--u) * 15);
+  line-height: calc(var(--u) * 24);
+  color: var(--text-color);
+}
+
+/* Tablet: three compact cards in a row */
+@media (max-width: 1100px) {
+  .process-stage {
+    --u: 1px; /* back to plain pixels */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    aspect-ratio: auto;
+  }
+
+  .process-headline,
+  .process-intro {
+    position: static;
+    white-space: normal;
+  }
+
+  .process-headline {
+    font-size: clamp(28px, 5vw, 38.4px);
+    line-height: 1.25;
+  }
+
+  .process-break {
+    display: none;
+  }
+
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  .process-step:nth-child(n) {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 0 20px 24px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, rgba(var(--tint), 0) 0%, rgba(var(--tint), 0.4) 100%);
+  }
+
+  .process-wolf {
+    position: static;
+    width: 80px;
+    height: auto;
+    margin-bottom: 8px;
+  }
+
+  .process-step-title {
+    position: static;
+    margin-bottom: 12px;
+  }
+
+  .process-step-text {
+    position: static;
+    width: auto;
+  }
+}
+
+/* Mobile: one card per row */
+@media (max-width: 760px) {
+  .process-steps {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 480px;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .process {
+    padding: 24px 16px 80px;
+  }
+}
