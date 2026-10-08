@@ -1,0 +1,595 @@
+/* process-section */
+
+position: absolute;
+height: 592px;
+left: 170.6px;
+right: 170.2px;
+top: 3273px;
+
+
+
+/* Built to slot into a pipeline you already run. */
+
+position: absolute;
+height: 96px;
+left: 32px;
+right: 32px;
+top: 0px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 38.4px;
+line-height: 48px;
+/* or 125% */
+display: flex;
+align-items: center;
+letter-spacing: -0.384px;
+
+color: #F4F1FF;
+
+
+
+/* Whether that means complex, multi-tiered rubrics in a spreadsheet or your own proprietary labeling platform. */
+
+position: absolute;
+width: 1116px;
+height: 54px;
+left: 32px;
+top: 125px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16.3px;
+line-height: 27px;
+/* or 165% */
+display: flex;
+align-items: center;
+
+color: #9AA1C8;
+
+
+
+/* scope */
+
+position: absolute;
+width: 351px;
+height: 105px;
+left: 32px;
+top: 372px;
+
+background: linear-gradient(180deg, rgba(56, 253, 182, 0) 0%, rgba(56, 253, 182, 0.4) 100%);
+border-radius: 8px;
+
+
+/* We learn your rubric */
+
+position: absolute;
+width: 350.66px;
+height: 22px;
+left: 0px;
+top: 0px;
+
+font-family: 'Space Grotesk';
+font-style: normal;
+font-weight: 600;
+font-size: 17.3px;
+line-height: 22px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.173px;
+
+color: #F4F1FF;
+
+
+
+/* We adapt to your existing tooling and grading criteria rather than asking you to adopt ours. */
+
+position: absolute;
+width: 323px;
+height: 48px;
+left: 14px;
+top: 45px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+/* or 160% */
+display: flex;
+align-items: center;
+
+color: #AFAFAF;
+
+
+
+/* evaluate  */
+
+position: absolute;
+width: 350.66px;
+height: 105.1px;
+left: 414.66px;
+top: 371.7px;
+
+background: linear-gradient(180deg, rgba(30, 214, 255, 0) 0%, rgba(30, 214, 255, 0.4) 100%);
+border-radius: 8px;
+
+
+/* The team works the batch */
+
+position: absolute;
+width: 350.66px;
+height: 22px;
+left: 0px;
+top: 0px;
+
+font-family: 'Space Grotesk';
+font-style: normal;
+font-weight: 600;
+font-size: 17.3px;
+line-height: 22px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.173px;
+
+color: #F4F1FF;
+
+
+
+/* Bilingual evaluators apply the rubric and guidelines across dialects, modalities, and edge cases you define. */
+
+position: absolute;
+width: 311px;
+height: 72px;
+left: 19.34px;
+top: 28.3px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+/* or 160% */
+display: flex;
+align-items: center;
+
+color: #AAAEC0;
+
+
+
+/* review */
+
+position: absolute;
+width: 350.68px;
+height: 105.1px;
+left: 797.32px;
+top: 371.7px;
+
+background: linear-gradient(180deg, rgba(161, 98, 247, 0) 0%, rgba(161, 98, 247, 0.4) 100%);
+border-radius: 8px;
+
+
+/* Senior QA before delivery */
+
+position: absolute;
+width: 350.68px;
+height: 22px;
+left: 0px;
+top: 0px;
+
+font-family: 'Space Grotesk';
+font-style: normal;
+font-weight: 600;
+font-size: 17.3px;
+line-height: 22px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.173px;
+
+color: #F4F1FF;
+
+
+
+/* Nothing reaches your engineering team until it's been checked against the same standard, batch to batch. */
+
+position: absolute;
+width: 327px;
+height: 72px;
+left: 16.68px;
+top: 28.3px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+/* or 160% */
+display: flex;
+align-items: center;
+
+color: #ACB0CA;
+
+
+
+/* wolf-logo-3 */
+
+position: absolute;
+width: 80.7px;
+height: 84px;
+left: 161px;
+top: 248px;
+
+
+
+/* Vector */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 23.79%;
+bottom: 0.46%;
+
+border: 1.47368px solid #50BFAC;
+box-shadow: 0px 0px 5.89474px #50BFAC;
+
+
+/* Vector */
+
+position: absolute;
+left: 49.86%;
+right: 0%;
+top: 23.79%;
+bottom: 0.46%;
+
+
+
+/* Vector */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 15.38%;
+right: 70.43%;
+top: 0%;
+bottom: 69.75%;
+
+border: 1.47368px solid #50BFAC;
+box-shadow: 0px 0px 5.89474px #50BFAC;
+
+
+/* Vector */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 70.67%;
+right: 15.37%;
+top: 0%;
+bottom: 69.98%;
+
+border: 1.47368px solid #50BFAC;
+box-shadow: 0px 0px 5.89474px #50BFAC;
+
+
+/* Vector */
+
+position: absolute;
+left: 43.32%;
+right: 43.3%;
+top: 87.61%;
+bottom: 0%;
+
+background: #141A36;
+
+
+/* Vector */
+
+position: absolute;
+left: 28.12%;
+right: 56.73%;
+top: 49.42%;
+bottom: 40.42%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 56.49%;
+right: 27.89%;
+top: 49.42%;
+bottom: 40.42%;
+
+
+
+/* Decentralized Network */
+
+position: absolute;
+width: 19.4px;
+height: 19.4px;
+left: 30.85px;
+top: 10.48px;
+
+
+
+/* 1 */
+
+position: absolute;
+width: 10.32px;
+height: 4.42px;
+left: 35.37px;
+top: 53.05px;
+
+font-family: 'Tac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 33px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.254947px;
+
+color: #FFFFFF;
+
+
+
+/* wolf-logo-2 */
+
+position: absolute;
+width: 80.7px;
+height: 84px;
+left: 930.03px;
+top: 233.5px;
+
+
+
+/* Vector */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 23.79%;
+bottom: 0.46%;
+
+border: 1.47365px solid #6541C2;
+box-shadow: 0px 0px 5.89458px #6441C2;
+
+
+/* Vector */
+
+position: absolute;
+left: 49.86%;
+right: 0%;
+top: 23.79%;
+bottom: 0.46%;
+
+
+
+/* Vector */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 15.38%;
+right: 70.43%;
+top: 0%;
+bottom: 69.75%;
+
+border: 1.47365px solid #6541C2;
+box-shadow: 0px 0px 5.89458px #6441C2;
+
+
+/* Vector */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 70.67%;
+right: 15.37%;
+top: 0%;
+bottom: 69.98%;
+
+border: 1.47365px solid #6541C2;
+box-shadow: 0px 0px 5.89458px #6441C2;
+
+
+/* Vector */
+
+position: absolute;
+left: 43.32%;
+right: 43.3%;
+top: 87.61%;
+bottom: 0%;
+
+background: #141A36;
+
+
+/* Vector */
+
+position: absolute;
+left: 28.12%;
+right: 56.73%;
+top: 49.42%;
+bottom: 40.42%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 56.49%;
+right: 27.89%;
+top: 49.42%;
+bottom: 40.42%;
+
+
+
+/* Decentralized Network */
+
+position: absolute;
+width: 19.4px;
+height: 19.4px;
+left: 30.84px;
+top: 10.48px;
+
+
+
+/* 3 */
+
+position: absolute;
+width: 10.32px;
+height: 4.42px;
+left: 35.37px;
+top: 53.05px;
+
+font-family: 'Tac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 33px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.254941px;
+
+color: #FFFFFF;
+
+
+
+/* wolf-logo-1 */
+
+position: absolute;
+width: 80.7px;
+height: 84px;
+left: 547.03px;
+top: 233.5px;
+
+
+
+/* Vector */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 23.79%;
+bottom: 0.46%;
+
+border: 1.47365px solid #00ADFF;
+box-shadow: 0px 0px 5.89458px #00ADFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 49.86%;
+right: 0%;
+top: 23.79%;
+bottom: 0.46%;
+
+
+
+/* Vector */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 15.38%;
+right: 70.43%;
+top: 0%;
+bottom: 69.75%;
+
+border: 1.47365px solid #00ADFF;
+box-shadow: 0px 0px 5.89458px #00ADFF;
+
+
+/* Vector */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 70.67%;
+right: 15.37%;
+top: 0%;
+bottom: 69.98%;
+
+border: 1.47365px solid #00ADFF;
+box-shadow: 0px 0px 5.89458px #00ADFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 43.32%;
+right: 43.3%;
+top: 87.61%;
+bottom: 0%;
+
+background: #141A36;
+
+
+/* Vector */
+
+position: absolute;
+left: 28.12%;
+right: 56.73%;
+top: 49.42%;
+bottom: 40.42%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 56.49%;
+right: 27.89%;
+top: 49.42%;
+bottom: 40.42%;
+
+
+
+/* Decentralized Network */
+
+position: absolute;
+width: 19.4px;
+height: 19.4px;
+left: 30.84px;
+top: 10.48px;
+
+
+
+/* 2 */
+
+position: absolute;
+width: 15px;
+height: 33px;
+left: 32.89px;
+top: 39.21px;
+
+font-family: 'Tac One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 33px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.254941px;
+
+color: #FFFFFF;
+

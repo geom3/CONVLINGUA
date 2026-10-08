@@ -844,3 +844,180 @@ header nav {
     white-space: normal;
   }
 }
+
+/* ==========================================================================
+   Experience card
+   Desktop: the SVG draws the card, the cubes SVG draws the numbers, and the
+   text is laid over both. --u is one unit of the 1464px-wide Figma frame.
+   ========================================================================== */
+.experience {
+  padding: 0 24px 80px;
+}
+
+.experience-container {
+  container-type: inline-size;
+  max-width: 1464px;
+  margin: 0 auto;
+}
+
+.experience-card {
+  --u: calc(100cqw / 1464);
+  position: relative;
+  aspect-ratio: 1464 / 350;
+  background: url('assets/blocks/background.svg') center / 100% 100% no-repeat;
+}
+
+.experience-quote {
+  position: absolute;
+  top: calc(var(--u) * 89);
+  left: calc(var(--u) * 54);
+  width: calc(var(--u) * 535);
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: calc(var(--u) * 30.4);
+  line-height: calc(var(--u) * 43);
+  white-space: nowrap;
+  color: var(--color-text);
+}
+
+.experience-highlight {
+  color: #57BEAD;
+}
+
+.experience-cubes {
+  position: absolute;
+  top: calc(var(--u) * 18);
+  left: calc(var(--u) * 663);
+  width: calc(var(--u) * 192.4);
+  height: calc(var(--u) * 297.34);
+  pointer-events: none;
+  user-select: none;
+}
+
+.experience-stats {
+  list-style: none;
+}
+
+.experience-stat-text {
+  position: absolute;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: calc(var(--u) * 18);
+  line-height: calc(var(--u) * 24);
+  color: var(--color-muted);
+}
+
+.experience-stat:nth-child(1) .experience-stat-text {
+  top: calc(var(--u) * 68);
+  left: calc(var(--u) * 855);
+  width: calc(var(--u) * 540);
+}
+
+.experience-stat:nth-child(2) .experience-stat-text {
+  top: calc(var(--u) * 147);
+  left: calc(var(--u) * 838);
+  width: calc(var(--u) * 455);
+}
+
+.experience-stat:nth-child(3) .experience-stat-text {
+  top: calc(var(--u) * 232);
+  left: calc(var(--u) * 861);
+  width: calc(var(--u) * 433);
+}
+
+/* These two are single lines in the design */
+.experience-stat:nth-child(n + 2) .experience-stat-text {
+  white-space: nowrap;
+}
+
+/* The numbers are drawn on the cubes, so keep them for screen readers only */
+.experience-stat-value {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Tablet / mobile: stacked, CSS-built card */
+@media (max-width: 1100px) {
+  .experience-card {
+    --u: 1px; /* back to plain pixels */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    aspect-ratio: auto;
+    padding: 40px 28px;
+    border: solid rgba(244, 241, 255, 0.1);
+    border-width: 0.8px 0;
+    border-radius: 26px;
+    background: #1B2148;
+  }
+
+  .experience-quote {
+    position: static;
+    width: auto;
+    font-size: clamp(22px, 4.5vw, 30.4px);
+    line-height: 1.41;
+    white-space: normal;
+  }
+
+  .experience-break {
+    display: none;
+  }
+
+  .experience-cubes {
+    position: static;
+    width: 160px;
+    height: auto;
+  }
+
+  .experience-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 540px;
+  }
+
+  .experience-stat {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+  }
+
+  .experience-stat-value {
+    position: static;
+    flex: 0 0 72px;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip-path: none;
+    font-family: var(--font-display);
+    font-size: 28px;
+    line-height: 1;
+    color: var(--color-accent);
+  }
+
+  .experience-stat-text {
+    position: static;
+    width: auto;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience {
+    padding: 0 16px 56px;
+  }
+
+  .experience-card {
+    padding: 32px 20px;
+  }
+}
