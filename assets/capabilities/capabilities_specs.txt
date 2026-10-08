@@ -1,0 +1,1024 @@
+/* capabilities-section */
+
+position: absolute;
+width: 1147px;
+height: 646.36px;
+left: 209.6px;
+top: 1928px;
+
+
+
+/* ai-fig */
+
+position: absolute;
+width: 321.46px;
+height: 353.61px;
+left: 825.54px;
+top: 148.17px;
+
+
+
+/* Group */
+
+position: absolute;
+left: 14.74%;
+right: 15%;
+top: 4.55%;
+bottom: 0.86%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 30%;
+right: 30%;
+top: 13.64%;
+bottom: 50%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 37.5%;
+right: 37.5%;
+top: 4.55%;
+bottom: 86.36%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 21%;
+right: 70%;
+top: 20.45%;
+bottom: 59.09%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 70%;
+right: 21%;
+top: 20.45%;
+bottom: 59.09%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 28%;
+right: 28%;
+top: 50%;
+bottom: 19.97%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 14.74%;
+right: 65.26%;
+top: 65.91%;
+bottom: 15.91%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 40%;
+right: 40%;
+top: 80.95%;
+bottom: 0.86%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 65%;
+right: 15%;
+top: 65.91%;
+bottom: 15.91%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 22.24%;
+right: 72.76%;
+top: 69.55%;
+bottom: 25.91%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 18.74%;
+right: 69.26%;
+top: 75.91%;
+bottom: 19.09%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 47.5%;
+right: 47.5%;
+top: 84.59%;
+bottom: 10.86%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 44%;
+right: 44%;
+top: 90.95%;
+bottom: 4.05%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 72.5%;
+right: 22.5%;
+top: 69.55%;
+bottom: 25.91%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 69%;
+right: 19%;
+top: 75.91%;
+bottom: 19.09%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 35.5%;
+right: 48.5%;
+top: 21.82%;
+bottom: 59.09%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 42%;
+right: 55%;
+top: 28.18%;
+bottom: 67.27%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 56%;
+right: 40%;
+top: 21.82%;
+bottom: 59.09%;
+
+
+
+/* Icons / Filled / Menu */
+
+position: absolute;
+left: 30.03%;
+right: 63.81%;
+top: 57.16%;
+bottom: 37.24%;
+
+transform: rotate(130.51deg);
+
+
+/* Path */
+
+position: absolute;
+left: 29.63%;
+right: 31.41%;
+top: 33.72%;
+bottom: -5.15%;
+
+background: #141936;
+transform: rotate(130.51deg);
+
+
+/* Path */
+
+position: absolute;
+left: 29.63%;
+right: 31.41%;
+top: 33.72%;
+bottom: -5.15%;
+
+background: #141936;
+transform: rotate(130.51deg);
+
+
+/* Icons / Filled / Menu */
+
+position: absolute;
+left: 34.13%;
+right: 59.72%;
+top: 52.95%;
+bottom: 41.45%;
+
+transform: rotate(115.05deg);
+
+
+/* Path */
+
+position: absolute;
+left: 25.18%;
+right: 35.86%;
+top: 35.17%;
+bottom: -6.6%;
+
+background: #141936;
+transform: rotate(115.05deg);
+
+
+/* Path */
+
+position: absolute;
+left: 25.18%;
+right: 35.86%;
+top: 35.17%;
+bottom: -6.6%;
+
+background: #141936;
+transform: rotate(115.05deg);
+
+
+/* Icons / Filled / Menu */
+
+position: absolute;
+left: 61.6%;
+right: 32.25%;
+top: 57.63%;
+bottom: 36.77%;
+
+transform: rotate(45.48deg);
+
+
+/* Path */
+
+position: absolute;
+left: 32.72%;
+right: 28.32%;
+top: 32.93%;
+bottom: -4.36%;
+
+background: #141936;
+transform: rotate(45.48deg);
+
+
+/* Path */
+
+position: absolute;
+left: 32.72%;
+right: 28.32%;
+top: 32.93%;
+bottom: -4.36%;
+
+background: #141936;
+transform: rotate(45.48deg);
+
+
+/* Icons / Filled / Menu */
+
+position: absolute;
+left: 58.08%;
+right: 35.76%;
+top: 53.5%;
+bottom: 40.9%;
+
+transform: rotate(56.09deg);
+
+
+/* Path */
+
+position: absolute;
+left: 29.79%;
+right: 31.25%;
+top: 34.65%;
+bottom: -6.07%;
+
+background: #141936;
+transform: rotate(56.09deg);
+
+
+/* Path */
+
+position: absolute;
+left: 29.79%;
+right: 31.25%;
+top: 34.65%;
+bottom: -6.07%;
+
+background: #141936;
+transform: rotate(56.09deg);
+
+
+/* Icons / Filled / Menu */
+
+position: absolute;
+left: 46.97%;
+right: 46.87%;
+top: 66.03%;
+bottom: 28.37%;
+
+transform: matrix(0, 1, 1, 0, 0, 0);
+
+
+/* Path */
+
+position: absolute;
+left: 14.28%;
+right: 46.76%;
+top: 32.14%;
+bottom: -3.57%;
+
+background: #141936;
+transform: rotate(90deg);
+
+
+/* Path */
+
+position: absolute;
+left: 14.29%;
+right: 46.75%;
+top: 32.14%;
+bottom: -3.57%;
+
+background: #141936;
+transform: matrix(0, 1, 1, 0, 0, 0);
+
+
+/* Icons / Filled / Menu */
+
+position: absolute;
+left: 46.97%;
+right: 46.87%;
+top: 53.66%;
+bottom: 40.74%;
+
+transform: matrix(0, 1, 1, 0, 0, 0);
+
+
+/* Path */
+
+position: absolute;
+left: 14.28%;
+right: 46.76%;
+top: 32.14%;
+bottom: -3.57%;
+
+background: #141936;
+transform: rotate(90deg);
+
+
+/* Path */
+
+position: absolute;
+left: 14.29%;
+right: 46.75%;
+top: 32.14%;
+bottom: -3.57%;
+
+background: #141936;
+transform: matrix(0, 1, 1, 0, 0, 0);
+
+
+/* Five ways we integrate into your pipeline. */
+
+position: absolute;
+width: 528.69px;
+height: 80px;
+left: 99.59px;
+top: 0px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 31.7212px;
+line-height: 40px;
+/* or 125% */
+display: flex;
+align-items: center;
+letter-spacing: -0.317212px;
+
+color: #F4F1FF;
+
+
+
+/* Each one is staffed by evaluators with a minimum of two years in the AI data space, and extra domain expertise (IT, Marketing, Commerce, etc.) not treated as a separate service, but as one coordinated layer of review. */
+
+position: absolute;
+width: 528.69px;
+height: 67px;
+left: 99.59px;
+top: 96.56px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14.8693px;
+line-height: 22px;
+/* or 150% */
+display: flex;
+align-items: center;
+
+color: #9AA1C8;
+
+
+
+/* five-steps */
+
+position: absolute;
+width: 810.65px;
+height: 472.32px;
+left: 0px;
+top: 174.04px;
+
+
+
+/* lines */
+
+position: absolute;
+height: 565.79px;
+left: 35.85px;
+right: 696.96px;
+top: -59.69px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 68.51%;
+right: 16.32%;
+top: 10.69%;
+bottom: 5.87%;
+
+transform: rotate(-179.91deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 53.48%;
+right: 31.35%;
+top: 75.35%;
+bottom: 18.39%;
+
+transform: rotate(-179.91deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 19.19%;
+right: 61.73%;
+top: 2.86%;
+bottom: 2.01%;
+
+transform: rotate(-179.91deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 38.69%;
+right: 46.15%;
+top: 38.85%;
+bottom: 52.81%;
+
+transform: rotate(-179.91deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 31.08%;
+right: 61.33%;
+top: 43.39%;
+bottom: 52.44%;
+
+transform: rotate(-179.91deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 62.95%;
+right: 25.81%;
+top: 87.1%;
+bottom: 11.35%;
+
+background: #1A1A2E;
+border: 0.874486px solid #A177E8;
+transform: rotate(-179.91deg);
+
+
+/* Ellipse 6 */
+
+position: absolute;
+left: 65.2%;
+right: 28.06%;
+top: 87.41%;
+bottom: 11.66%;
+
+background: #00FFDD;
+box-shadow: 0px 0px 6.74228px 1.74897px #4EE6D2;
+
+
+/* Vector */
+
+position: absolute;
+left: 63.14%;
+right: 25.62%;
+top: 72.77%;
+bottom: 25.69%;
+
+background: #1A1A2E;
+border: 0.874486px solid #8881EE;
+transform: rotate(-179.91deg);
+
+
+/* Ellipse 9 */
+
+position: absolute;
+left: 65.39%;
+right: 27.87%;
+top: 73.08%;
+bottom: 25.99%;
+
+background: #00FFDD;
+box-shadow: 0px 0px 6.74228px 1.74897px #4EE6D2;
+
+
+/* Vector */
+
+position: absolute;
+left: 78.65%;
+right: 10.11%;
+top: 55.79%;
+bottom: 42.66%;
+
+background: #1A1A2E;
+border: 0.874486px solid #6C8CF5;
+transform: rotate(-179.91deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 64.04%;
+right: 24.72%;
+top: 36.32%;
+bottom: 62.13%;
+
+background: #1A1A2E;
+border: 0.874486px solid #60B1E6;
+transform: rotate(-179.91deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 75.28%;
+right: 13.48%;
+top: 18.22%;
+bottom: 80.24%;
+
+background: #1A1A2E;
+border: 0.874486px solid #82E4D7;
+transform: rotate(-179.91deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 32.91%;
+right: 56.47%;
+top: 89.22%;
+bottom: 9.32%;
+
+background: #1A1A2E;
+transform: rotate(-179.91deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 17.91%;
+right: 71.47%;
+top: 73.57%;
+bottom: 24.97%;
+
+background: #1A1A2E;
+transform: rotate(-179.91deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 33.29%;
+right: 56.09%;
+top: 53.76%;
+bottom: 44.78%;
+
+background: #1A1A2E;
+transform: rotate(-179.91deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 14.64%;
+right: 74.74%;
+top: 25.59%;
+bottom: 72.95%;
+
+background: #1A1A2E;
+transform: rotate(-179.91deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 33.73%;
+right: 55.65%;
+top: 13.08%;
+bottom: 85.46%;
+
+background: #1A1A2E;
+transform: rotate(-179.91deg);
+
+
+/* Vector */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 50.51%;
+right: 43.42%;
+top: 74.94%;
+bottom: 24.23%;
+
+background: linear-gradient(180deg, #90FFEA 0%, #90D0FF 50%, #B0A0FF 100%);
+transform: rotate(-179.91deg);
+
+
+/* Vector */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 50.9%;
+right: 43.03%;
+top: 38.43%;
+bottom: 60.74%;
+
+background: linear-gradient(180deg, #90FFEA 0%, #90D0FF 50%, #B0A0FF 100%);
+transform: rotate(-179.91deg);
+
+
+/* Vector */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 28.09%;
+right: 65.84%;
+top: 42.97%;
+bottom: 56.2%;
+
+background: linear-gradient(180deg, #90FFEA 0%, #90D0FF 50%, #B0A0FF 100%);
+transform: rotate(-179.91deg);
+
+
+/* Ellipse 1 */
+
+position: absolute;
+height: 5.25px;
+left: 77.53%;
+right: 15.73%;
+top: calc(50% - 5.25px/2 - 175.33px);
+
+background: #00FFDD;
+box-shadow: 0px 0px 6.74228px 1.74897px #4EE6D2;
+
+
+/* Ellipse 7 */
+
+position: absolute;
+height: 5.25px;
+left: 66.29%;
+right: 26.97%;
+top: calc(50% - 5.25px/2 - 73.02px);
+
+background: #00FFDD;
+box-shadow: 0px 0px 6.74228px 1.74897px #4EE6D2;
+
+
+/* Ellipse 8 */
+
+position: absolute;
+height: 5.25px;
+left: 80.9%;
+right: 12.36%;
+top: calc(50% - 5.25px/2 + 37.17px);
+
+background: #00FFDD;
+box-shadow: 0px 0px 6.74228px 1.74897px #4EE6D2;
+
+
+/* Vector */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 65.17%;
+right: 28.09%;
+top: 93.66%;
+bottom: 5.41%;
+
+background: linear-gradient(180deg, #90FFEA 0%, #90D0FF 50%, #B0A0FF 100%);
+transform: rotate(-179.91deg);
+
+
+/* Vector */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 34.83%;
+right: 58.43%;
+top: 97.68%;
+bottom: 1.39%;
+
+background: linear-gradient(180deg, #90FFEA 0%, #90D0FF 50%, #B0A0FF 100%);
+transform: rotate(-179.91deg);
+
+
+/* Vector */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 35.95%;
+right: 57.3%;
+top: 2.32%;
+bottom: 96.75%;
+
+background: linear-gradient(180deg, #90FFEA 0%, #90D0FF 50%, #B0A0FF 100%);
+transform: rotate(-179.91deg);
+
+
+/* Vector */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 66.29%;
+right: 26.97%;
+top: 10.36%;
+bottom: 88.72%;
+
+background: linear-gradient(180deg, #90FFEA 0%, #90D0FF 50%, #B0A0FF 100%);
+transform: rotate(-179.91deg);
+
+
+/* Cross-Lingual RLHF, MTPE, SFT & Reward Modeling */
+
+position: absolute;
+height: 44px;
+left: 115.43px;
+right: 485.22px;
+top: 28.86px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 15.6533px;
+line-height: 22px;
+/* or 140% */
+display: flex;
+align-items: center;
+letter-spacing: -0.156533px;
+
+color: #F4F1FF;
+
+
+
+/* Golden-pair generation, side-by-side model comparisons, and output ranking tuned for safety and regional dialect accuracy. */
+
+position: absolute;
+height: 46px;
+left: 335.8px;
+right: 24.85px;
+top: 22.74px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13.7294px;
+line-height: 23px;
+/* or 165% */
+display: flex;
+align-items: center;
+
+color: #9AA1C8;
+
+
+
+/* Multimodal Data Evaluation */
+
+position: absolute;
+height: 44px;
+left: 115.43px;
+right: 566.22px;
+top: 127.44px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 15.6533px;
+line-height: 22px;
+/* or 140% */
+display: flex;
+align-items: center;
+letter-spacing: -0.156533px;
+
+color: #F4F1FF;
+
+
+
+/* Prompt-response analysis across text, vision, and code, held to the same bar in both English and Arabic. */
+
+position: absolute;
+height: 46px;
+left: 335.8px;
+right: -0.15px;
+top: 127.69px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13.7294px;
+line-height: 23px;
+/* or 165% */
+display: flex;
+align-items: center;
+
+color: #9AA1C8;
+
+
+
+/* Model Red-Teaming & Bias Mitigation */
+
+position: absolute;
+height: 44px;
+left: 115.43px;
+right: 525.22px;
+top: 238.96px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 15.6533px;
+line-height: 22px;
+/* or 140% */
+display: flex;
+align-items: center;
+letter-spacing: -0.156533px;
+
+color: #F4F1FF;
+
+
+
+/* Stress-testing conversational agents to surface logic failures, cultural erasure, and cross-lingual hallucination before your users do. */
+
+position: absolute;
+height: 46px;
+left: 335.8px;
+right: 24.85px;
+top: 239.21px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13.7294px;
+line-height: 23px;
+/* or 165% */
+display: flex;
+align-items: center;
+
+color: #9AA1C8;
+
+
+
+/* UI/UX & RTL Localization QA */
+
+position: absolute;
+height: 44px;
+left: 115.43px;
+right: 498.22px;
+top: 334.74px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 15.6533px;
+line-height: 22px;
+/* or 140% */
+display: flex;
+align-items: center;
+letter-spacing: -0.156533px;
+
+color: #F4F1FF;
+
+
+
+/* Auditing front-end integrity, visual hierarchy, and right-to-left layout scaling collisions that English-first QA tends to miss. */
+
+position: absolute;
+height: 46px;
+left: 335.8px;
+right: 34.85px;
+top: 334.99px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13.7294px;
+line-height: 23px;
+/* or 165% */
+display: flex;
+align-items: center;
+
+color: #9AA1C8;
+
+
+
+/* Front-End Code & API Evaluation */
+
+position: absolute;
+height: 44px;
+left: 115.43px;
+right: 525.22px;
+top: 420.91px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 15.6533px;
+line-height: 22px;
+/* or 140% */
+display: flex;
+align-items: center;
+letter-spacing: -0.156533px;
+
+color: #F4F1FF;
+
+
+
+/* Assessing AI-generated HTML, CSS, and JavaScript, plus developer CLI and API tool integrations, for functional accuracy. */
+
+position: absolute;
+height: 46px;
+left: 335.8px;
+right: 8.85px;
+top: 421.16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13.7294px;
+line-height: 23px;
+/* or 165% */
+display: flex;
+align-items: center;
+
+color: #9AA1C8;
+

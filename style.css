@@ -653,3 +653,194 @@ header nav {
     padding: 24px 20px;
   }
 }
+
+/* ==========================================================================
+   Capabilities
+   Desktop: laid out on the Figma grid. --u is one unit of the 1147px-wide
+   frame, so positions and type scale with the container width.
+   ========================================================================== */
+.capabilities {
+  padding: 40px 24px 120px;
+}
+
+.capabilities-container {
+  container-type: inline-size;
+  max-width: 1147px;
+  margin: 0 auto;
+}
+
+.capabilities-stage {
+  --u: calc(100cqw / 1147);
+  position: relative;
+  aspect-ratio: 1147 / 646.36;
+}
+
+.capabilities-headline {
+  position: absolute;
+  top: 0;
+  left: calc(var(--u) * 99.59);
+  width: calc(var(--u) * 528.69);
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: calc(var(--u) * 31.7212);
+  line-height: calc(var(--u) * 40);
+  letter-spacing: calc(var(--u) * -0.317212);
+  color: var(--color-text);
+}
+
+.capabilities-intro {
+  position: absolute;
+  top: calc(var(--u) * 96.56);
+  left: calc(var(--u) * 99.59);
+  width: calc(var(--u) * 528.69);
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: calc(var(--u) * 14.8693);
+  line-height: calc(var(--u) * 22);
+  color: var(--color-muted);
+}
+
+.capabilities-steps {
+  position: absolute;
+  top: calc(var(--u) * 174.04);
+  left: 0;
+  width: calc(var(--u) * 810.65);
+  height: calc(var(--u) * 472.32);
+}
+
+.capabilities-lines {
+  position: absolute;
+  top: calc(var(--u) * -59.69);
+  left: calc(var(--u) * 35.85);
+  width: calc(var(--u) * 77.84);
+  height: calc(var(--u) * 565.79);
+  pointer-events: none;
+  user-select: none;
+}
+
+.capabilities-figure {
+  position: absolute;
+  top: calc(var(--u) * 148.17);
+  left: calc(var(--u) * 825.54);
+  width: calc(var(--u) * 321.46);
+  height: calc(var(--u) * 353.61);
+  pointer-events: none;
+  user-select: none;
+}
+
+.capabilities-list {
+  list-style: none;
+}
+
+/* Each row lines up with a glowing node on the circuit SVG.
+   Positions are unitless on purpose: they get multiplied by --u below. */
+.capability:nth-child(1) { --title-top: 28.86;  --text-top: 22.74;  --text-width: 450; }
+.capability:nth-child(2) { --title-top: 127.44; --text-top: 127.69; --text-width: 475; }
+.capability:nth-child(3) { --title-top: 238.96; --text-top: 239.21; --text-width: 450; }
+.capability:nth-child(4) { --title-top: 334.74; --text-top: 334.99; --text-width: 440; }
+.capability:nth-child(5) { --title-top: 420.91; --text-top: 421.16; --text-width: 466; }
+
+.capability-title {
+  position: absolute;
+  top: calc(var(--u) * var(--title-top));
+  left: calc(var(--u) * 115.43);
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: calc(var(--u) * 15.6533);
+  line-height: calc(var(--u) * 22);
+  letter-spacing: calc(var(--u) * -0.156533);
+  white-space: nowrap;
+  color: var(--color-text);
+}
+
+.capability-text {
+  position: absolute;
+  top: calc(var(--u) * var(--text-top));
+  left: calc(var(--u) * 335.8);
+  width: calc(var(--u) * var(--text-width));
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: calc(var(--u) * 13.7294);
+  line-height: calc(var(--u) * 23);
+  color: var(--color-muted);
+}
+
+/* Tablet / mobile: single column, the circuit lines become a simple rail */
+@media (max-width: 1100px) {
+  .capabilities-stage {
+    --u: 1px; /* back to plain pixels */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    aspect-ratio: auto;
+  }
+
+  .capabilities-headline,
+  .capabilities-intro,
+  .capabilities-steps,
+  .capability-title,
+  .capability-text {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+
+  .capabilities-headline {
+    font-size: clamp(26px, 5vw, 31.72px);
+  }
+
+  .capabilities-lines {
+    display: none;
+  }
+
+  .capabilities-steps {
+    margin-top: 12px;
+  }
+
+  .capabilities-list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding-left: 28px;
+    border-left: 2px solid;
+    border-image: linear-gradient(180deg, var(--color-accent), #6C8CF5, #A177E8) 1;
+  }
+
+  .capability {
+    position: relative;
+  }
+
+  .capability::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -31.6px;
+    width: 5.25px;
+    height: 5.25px;
+    border-radius: 50%;
+    background: #00FFDD;
+    box-shadow: 0 0 6.74px 1.75px var(--color-accent);
+  }
+
+  .capability-title {
+    margin-bottom: 6px;
+  }
+
+  .capabilities-figure {
+    position: static;
+    align-self: center;
+    width: 240px;
+    height: auto;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .capabilities {
+    padding: 24px 16px 80px;
+  }
+
+  .capability-title {
+    white-space: normal;
+  }
+}

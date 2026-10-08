@@ -1,0 +1,317 @@
+/* experience  */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1464px;
+height: 350px;
+left: calc(50% - 1464px/2 + 0.2px);
+top: 2808px;
+
+background: #1B2148;
+border-width: 0.8px 0px;
+border-style: solid;
+border-color: rgba(244, 241, 255, 0.1);
+border-radius: 26px;
+
+
+/* "Every batch is processed, reviewed, and refined by senior evaluators before it ever reaches your engineering team." */
+
+position: absolute;
+width: 535px;
+height: 171px;
+left: 54px;
+top: 89px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 30.4px;
+line-height: 43px;
+/* or 140% */
+display: flex;
+align-items: center;
+
+color: #F4F1FF;
+
+
+
+/* cubes */
+
+position: absolute;
+width: 192.4px;
+height: 297.34px;
+left: calc(50% - 192.4px/2 + 27.2px);
+top: 18px;
+
+
+
+/* Group */
+
+position: absolute;
+left: 9.09%;
+right: 9.09%;
+top: 5.88%;
+bottom: 5.88%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 31.82%;
+right: 22.73%;
+top: 64.71%;
+bottom: 5.88%;
+
+border: 3.49817px solid #79EDE5;
+
+
+/* Vector */
+
+position: absolute;
+left: 59.09%;
+right: 9.09%;
+top: 55.88%;
+bottom: 35.29%;
+
+border: 3.49817px solid #79EDE5;
+
+
+/* Vector */
+
+position: absolute;
+left: 77.27%;
+right: 9.09%;
+top: 55.88%;
+bottom: 5.88%;
+
+border: 3.49817px solid #79EDE5;
+
+
+/* Vector */
+
+position: absolute;
+left: 34.54%;
+right: 61.36%;
+top: 72.06%;
+bottom: 13.24%;
+
+border: 3.49817px solid #79EDE5;
+
+
+/* Vector */
+
+position: absolute;
+left: 43.18%;
+right: 49.55%;
+top: 72.06%;
+bottom: 13.24%;
+
+border: 3.49817px solid #79EDE5;
+
+
+/* Vector */
+
+position: absolute;
+left: 53.18%;
+right: 39.55%;
+top: 72.06%;
+bottom: 13.24%;
+
+border: 3.49817px solid #79EDE5;
+
+
+/* Vector */
+
+position: absolute;
+left: 63.64%;
+right: 25%;
+top: 72.06%;
+bottom: 13.24%;
+
+border: 3.49817px solid #79EDE5;
+
+
+/* Vector */
+
+position: absolute;
+left: 64.55%;
+right: 31.82%;
+top: 72.94%;
+bottom: 24.71%;
+
+border: 3.49817px solid #79EDE5;
+
+
+/* Vector */
+
+position: absolute;
+left: 70.91%;
+right: 25.45%;
+top: 83.53%;
+bottom: 14.12%;
+
+border: 3.49817px solid #79EDE5;
+
+
+/* Vector */
+
+position: absolute;
+left: 9.09%;
+right: 45.45%;
+top: 38.24%;
+bottom: 32.35%;
+
+border: 3.49817px solid #C6A6FA;
+
+
+/* Vector */
+
+position: absolute;
+left: 9.09%;
+right: 77.27%;
+top: 29.41%;
+bottom: 61.76%;
+
+border: 3.49817px solid #C6A6FA;
+
+
+/* Vector */
+
+position: absolute;
+left: 54.55%;
+right: 31.82%;
+top: 44.12%;
+bottom: 32.35%;
+
+border: 3.49817px solid #C6A6FA;
+
+
+/* Vector */
+
+position: absolute;
+left: 26.36%;
+right: 68.18%;
+top: 47.06%;
+bottom: 38.24%;
+
+border: 3.49817px solid #C6A6FA;
+
+
+/* Vector */
+
+position: absolute;
+left: 22.73%;
+right: 31.82%;
+top: 14.71%;
+bottom: 55.88%;
+
+border: 3.49817px solid #E6D495;
+
+
+/* Vector */
+
+position: absolute;
+left: 22.73%;
+right: 18.18%;
+top: 5.88%;
+bottom: 85.29%;
+
+border: 3.49817px solid #E6D495;
+
+
+/* Vector */
+
+position: absolute;
+left: 68.18%;
+right: 18.18%;
+top: 5.88%;
+bottom: 55.88%;
+
+border: 3.49817px solid #E6D495;
+
+
+/* Vector */
+
+position: absolute;
+left: 34.09%;
+right: 52.27%;
+top: 22.06%;
+bottom: 61.76%;
+
+border: 3.49817px solid #E6D495;
+
+
+/* Vector */
+
+position: absolute;
+left: 50%;
+right: 36.36%;
+top: 27.94%;
+bottom: 63.24%;
+
+border: 3.49817px solid #E6D495;
+
+
+/* Years of hands-on AI data experience, minimum, for every evaluator on the team */
+
+position: absolute;
+width: 540px;
+height: 48px;
+left: 855px;
+top: 68px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+/* or 131% */
+display: flex;
+align-items: center;
+
+color: #9AA1C8;
+
+
+
+/* accountable team instead of a rotating freelance pool */
+
+position: absolute;
+width: 455px;
+height: 24px;
+left: 838px;
+top: 147px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+/* identical to box height, or 131% */
+display: flex;
+align-items: center;
+
+color: #9AA1C8;
+
+
+
+/* of batches pass a senior QA review before delivery */
+
+position: absolute;
+width: 433px;
+height: 24px;
+left: 861px;
+top: 232px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+/* identical to box height, or 131% */
+display: flex;
+align-items: center;
+
+color: #9AA1C8;
+
