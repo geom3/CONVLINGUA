@@ -1,0 +1,157 @@
+/* contact-section */
+
+position: absolute;
+height: 406.39px;
+left: 46.4px;
+right: 46.4px;
+top: 3841px;
+
+background: rgba(0, 0, 0, 0.1);
+background-blend-mode: plus-lighter;
+box-shadow: inset 3.83869px 3.83869px 0.639781px -4.47847px rgba(255, 255, 255, 0.5), inset 2.55912px 2.55912px 1.27956px -2.55912px #666666, inset -2.55912px -2.55912px 1.27956px -2.55912px #666666, inset 0px 0px 0px 1.27956px #A6A6A6, inset 0px 0px 28.1504px #F2F2F2;
+backdrop-filter: blur(7.67737px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 30.7095px;
+
+
+/* Gradient */
+
+position: absolute;
+width: 1425.94px;
+height: 404.34px;
+left: 1.02px;
+top: 1.02px;
+
+background: radial-gradient(53.84% 82.28% at 85% 20%, rgba(161, 119, 232, 0.2) 0%, rgba(161, 119, 232, 0) 60%);
+
+
+/* Bring us your next batch. */
+
+position: absolute;
+width: 563px;
+height: 59px;
+left: 82.92px;
+top: 93.15px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 45.0406px;
+line-height: 59px;
+/* identical to box height, or 130% */
+display: flex;
+align-items: center;
+letter-spacing: -0.450406px;
+
+color: #F4F1FF;
+
+
+
+/* Background+Border */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 522.06px;
+height: 220.08px;
+left: 823.01px;
+top: 93.15px;
+
+background: #141936;
+border: 1.27956px solid rgba(244, 241, 255, 0.18);
+border-radius: 20.473px;
+
+
+/* GET IN TOUCH */
+
+position: absolute;
+width: 115px;
+height: 19px;
+left: 36.85px;
+top: 38.13px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 15.9945px;
+line-height: 19px;
+display: flex;
+align-items: center;
+
+color: #7B82AC;
+
+
+
+/* collab@convlingua.com */
+
+position: absolute;
+width: 271px;
+height: 28px;
+left: 37.11px;
+top: 82.42px;
+
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 21.4966px;
+line-height: 28px;
+display: flex;
+align-items: center;
+
+color: #F4F1FF;
+
+
+
+/* Email-bottom */
+
+position: absolute;
+height: 52.46px;
+left: 101.08px;
+right: 101.09px;
+top: 132.32px;
+
+background: linear-gradient(180deg, rgba(123, 253, 227, 0.8) 0%, #A670DC 100%);
+border-radius: 21.7526px;
+
+
+/* Text */
+
+position: absolute;
+width: 133px;
+height: 23px;
+left: calc(50% - 133px/2 + 0.78px);
+top: calc(50% - 23px/2 - 0.5px);
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18.8096px;
+line-height: 23px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #0C0F26;
+
+
+
+/* Tell us what you're building and what "good" looks like for your model. We'll scope a pilot around your guidelines , not the other way around. */
+
+position: absolute;
+width: 606px;
+height: 99px;
+left: 83.17px;
+top: 176.58px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20.473px;
+line-height: 33px;
+/* or 160% */
+display: flex;
+align-items: center;
+
+color: #9AA1C8;
+

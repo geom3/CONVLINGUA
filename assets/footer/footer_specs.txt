@@ -1,0 +1,243 @@
+/* Footer */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 48px 170.4px 40px;
+
+width: 1520.8px;
+height: 124.4px;
+
+border-top: 0.8px solid rgba(244, 241, 255, 0.1);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+z-index: 1;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px 32px;
+gap: 491.6px;
+
+width: 1180px;
+max-width: 1180px;
+height: 35.6px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 277.64px;
+height: 35.6px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* wolf logo */
+
+width: 31.64px;
+height: 32.93px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 23.79%;
+bottom: 0.46%;
+
+background: linear-gradient(180deg, #24FFD5 0%, #8A2BFF 53.85%, #CDA8F9 98.08%);
+
+
+/* Vector */
+
+position: absolute;
+left: 49.86%;
+right: 0%;
+top: 23.79%;
+bottom: 0.46%;
+
+background: linear-gradient(180deg, #24FFD5 4.33%, #8A2BFF 52.88%, #CDA8F9 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 15.38%;
+right: 70.43%;
+top: 0%;
+bottom: 69.75%;
+
+background: linear-gradient(180deg, #FCFDFD 0%, #25FCD5 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 70.67%;
+right: 15.37%;
+top: 0%;
+bottom: 69.98%;
+
+background: linear-gradient(180deg, #FCFDFD 0%, #24FFD5 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 43.32%;
+right: 43.3%;
+top: 87.61%;
+bottom: 0%;
+
+background: #141A36;
+
+
+/* Vector */
+
+position: absolute;
+left: 28.12%;
+right: 56.73%;
+top: 49.42%;
+bottom: 40.42%;
+
+background: #141A36;
+
+
+/* Vector */
+
+position: absolute;
+left: 56.49%;
+right: 27.89%;
+top: 49.42%;
+bottom: 40.42%;
+
+background: #141A36;
+
+
+/* Decentralized Network */
+
+position: absolute;
+width: 7.61px;
+height: 7.61px;
+left: 12.09px;
+top: 4.11px;
+
+background: url(.png);
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 0px 1.6px;
+
+width: 236px;
+height: 35.6px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* © 2026 Convlingua. Designed by Manoko(✧ᴗ✧) ©2026 */
+
+width: 236px;
+height: 34px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14.1px;
+line-height: 17px;
+display: flex;
+align-items: center;
+
+color: #7B82AC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 244.04px;
+height: 17.6px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 244.04px;
+height: 17.6px;
+
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 13.1px;
+line-height: 17px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #7B82AC;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;

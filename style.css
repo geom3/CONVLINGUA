@@ -1230,3 +1230,237 @@ header nav {
     padding: 24px 16px 80px;
   }
 }
+
+/* ==========================================================================
+   Contact
+   Desktop: laid out on the Figma grid. --u is one unit of the 1428px-wide
+   card. The glass card and the email box are plain CSS (the exported
+   background SVG uses blend modes that browsers render as flat grey).
+   ========================================================================== */
+.contact {
+  padding: 0 24px 80px;
+}
+
+.contact-container {
+  container-type: inline-size;
+  max-width: 1428px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  --u: calc(100cqw / 1428);
+  position: relative;
+  aspect-ratio: 1428 / 406.39;
+  border: 1px solid rgba(244, 241, 255, 0.12);
+  border-radius: calc(var(--u) * 30.71);
+  background:
+    radial-gradient(circle at 0 0, rgba(255, 255, 255, 0.07), transparent 22%),
+    radial-gradient(circle at 100% 100%, rgba(255, 255, 255, 0.05), transparent 22%),
+    radial-gradient(53.84% 82.28% at 85% 20%, rgba(161, 119, 232, 0.2) 0%, rgba(161, 119, 232, 0) 60%);
+  box-shadow:
+    inset 0 0 28px rgba(0, 0, 0, 0.5),
+    inset 3px 3px 1px -3px rgba(255, 255, 255, 0.5),
+    inset -3px -3px 1px -3px rgba(255, 255, 255, 0.35);
+}
+
+/* Reflective edge: the rim is brightest at the top-left and bottom-right corners */
+.contact-card::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  padding: 1.5px;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0.04) 16%,
+    rgba(255, 255, 255, 0.04) 84%,
+    rgba(255, 255, 255, 0.45) 100%
+  );
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+  pointer-events: none;
+}
+
+.contact-signature {
+  position: absolute;
+  top: calc(var(--u) * 11);
+  left: calc(var(--u) * 511);
+  width: calc(var(--u) * 309);
+  height: calc(var(--u) * 352);
+  pointer-events: none;
+  user-select: none;
+}
+
+.contact-headline {
+  position: absolute;
+  top: calc(var(--u) * 93.15);
+  left: calc(var(--u) * 82.92);
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: calc(var(--u) * 45.0406);
+  line-height: calc(var(--u) * 59);
+  letter-spacing: calc(var(--u) * -0.450406);
+  white-space: nowrap;
+  color: var(--color-text);
+}
+
+.contact-text {
+  position: absolute;
+  top: calc(var(--u) * 176.58);
+  left: calc(var(--u) * 83.17);
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: calc(var(--u) * 20.473);
+  line-height: calc(var(--u) * 33);
+  white-space: nowrap;
+  color: var(--color-muted);
+}
+
+.contact-box {
+  position: absolute;
+  top: calc(var(--u) * 93.15);
+  left: calc(var(--u) * 823.01);
+  width: calc(var(--u) * 522.06);
+  height: calc(var(--u) * 220.08);
+  border: 1.28px solid rgba(244, 241, 255, 0.18);
+  border-radius: calc(var(--u) * 20.47);
+  background: var(--color-bg);
+}
+
+.contact-label {
+  position: absolute;
+  top: calc(var(--u) * 38.13);
+  left: calc(var(--u) * 36.85);
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: calc(var(--u) * 15.9945);
+  line-height: calc(var(--u) * 19);
+  color: #7B82AC;
+}
+
+.contact-email {
+  position: absolute;
+  top: calc(var(--u) * 82.42);
+  left: calc(var(--u) * 37.11);
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: calc(var(--u) * 21.4966);
+  line-height: calc(var(--u) * 28);
+  white-space: nowrap;
+  color: var(--color-text);
+}
+
+.contact-button {
+  position: absolute;
+  top: calc(var(--u) * 132.32);
+  left: calc(var(--u) * 101.08);
+  width: calc(var(--u) * 319.89);
+  height: calc(var(--u) * 52.46);
+  line-height: 0;
+}
+
+.contact-button img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* The hover image replaces the default one (also on keyboard focus) */
+.contact-button .btn-hover {
+  display: none;
+}
+
+.contact-button:is(:hover, :focus-visible) .btn-default {
+  display: none;
+}
+
+.contact-button:is(:hover, :focus-visible) .btn-hover {
+  display: block;
+}
+
+/* Tablet / mobile: stacked, CSS-built card */
+@media (max-width: 1100px) {
+  .contact-card {
+    --u: 1px; /* back to plain pixels */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    aspect-ratio: auto;
+    padding: 48px 40px;
+  }
+
+  .contact-signature {
+    display: none;
+  }
+
+  .contact-headline,
+  .contact-text,
+  .contact-box,
+  .contact-label,
+  .contact-email,
+  .contact-button {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+
+  .contact-headline {
+    font-size: clamp(30px, 6vw, 45px);
+    line-height: 1.3;
+    white-space: normal;
+  }
+
+  .contact-text {
+    font-size: clamp(16px, 2.4vw, 20.5px);
+    line-height: 1.6;
+    white-space: normal;
+  }
+
+  .contact-break {
+    display: none;
+  }
+
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+    max-width: 522px;
+    margin-top: 12px;
+    padding: 36px;
+  }
+
+  .contact-email {
+    font-size: clamp(16px, 4.4vw, 21.5px);
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+
+  .contact-button {
+    align-self: center;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .contact-button img {
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 0 16px 56px;
+  }
+
+  .contact-card {
+    padding: 32px 20px;
+  }
+
+  .contact-box {
+    padding: 24px 20px;
+  }
+}
