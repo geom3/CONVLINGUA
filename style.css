@@ -1279,6 +1279,7 @@ header nav {
   );
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
+  mask-composite: xor;
   mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
   pointer-events: none;
 }
@@ -1462,5 +1463,66 @@ header nav {
 
   .contact-box {
     padding: 24px 20px;
+  }
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.footer {
+  padding: 48px 24px 40px;
+  border-top: 0.8px solid rgba(244, 241, 255, 0.1);
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px; /* same inset as the section headings */
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  display: block;
+  flex-shrink: 0;
+  width: 31.64px;
+  height: auto;
+}
+
+.footer-copy {
+  padding-bottom: 1.6px;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 14.1px;
+  line-height: 17px;
+  color: #7B82AC;
+}
+
+.footer-slogan {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: 13.1px;
+  line-height: 17px;
+  color: #7B82AC;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px 32px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 0;
   }
 }
