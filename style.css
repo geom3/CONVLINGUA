@@ -41,6 +41,16 @@ a {
   outline-offset: 3px;
 }
 
+/* In-page links land a little below the top edge */
+section[id] {
+  scroll-margin-top: 24px;
+}
+
+/* Sections receive focus after a link jump (for screen readers); no ring needed */
+[tabindex="-1"]:focus {
+  outline: none;
+}
+
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -465,7 +475,7 @@ header.is-open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotat
   }
 
   .hero-artwork {
-    max-width: 280px;
+    display: none; /* colored lines are desktop/tablet only */
   }
 }
 
