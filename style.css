@@ -124,6 +124,38 @@ header nav {
   box-shadow: none;
 }
 
+.nav-toggle {
+  display: none;
+  position: relative;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  margin-right: -10px; /* line the bars up with the header's inner edge */
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #E8E9EF;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-toggle span:nth-child(1) { top: 15px; }
+.nav-toggle span:nth-child(2) { top: 21px; }
+.nav-toggle span:nth-child(3) { top: 27px; }
+
+header.is-open .nav-toggle span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+header.is-open .nav-toggle span:nth-child(2) { opacity: 0; }
+header.is-open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
 @media (max-width: 768px) {
   header {
     max-width: calc(100% - 40px);
@@ -147,19 +179,70 @@ header nav {
   }
 }
 
+@media (max-width: 640px) {
+  .nav-btn-custom {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  /* The links become a dropdown under the header */
+  .nav-links {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 2px;
+    padding: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 18px;
+    background: #0E1230; /* solid: backdrop blur doesn't work inside the blurred header */
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    transition: opacity 0.18s ease, transform 0.18s ease, visibility 0s linear 0.18s;
+  }
+
+  header.is-open .nav-links {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition-delay: 0s;
+  }
+
+  .nav-links a {
+    padding: 14px 16px;
+    border-radius: 12px;
+    font-size: 16px;
+  }
+
+  .nav-links a:hover,
+  .nav-links a:focus-visible {
+    background: rgba(255, 255, 255, 0.06);
+  }
+}
+
+@media (max-width: 640px) and (prefers-reduced-motion: reduce) {
+  .nav-links,
+  .nav-toggle span {
+    transition: none;
+  }
+}
+
 @media (max-width: 480px) {
   header {
-    max-width: calc(100% - 24px);
     margin-top: 10px;
     padding: 8px 14px;
   }
 
   .logo {
     width: 110px;
-  }
-
-  .nav-links {
-    display: none;
   }
 }
 
@@ -196,20 +279,20 @@ header nav {
   font-weight: 400;
   font-size: 60px;
   line-height: 70.85px;
-  letter-spacing: -0.66px;
+  letter-spacing: -0.011em;
   white-space: nowrap;
   color: var(--color-text);
 }
 
 .rubik-meaning {
   display: inline-block;
-  margin-top: -5px;
-  padding-right: 8px;
-  padding-bottom: 12px;
+  margin-top: -0.0735em;
+  padding-right: 0.1176em;
+  padding-bottom: 0.1765em;
   font-family: 'Rubik Doodle Shadow', cursive;
   font-weight: 400; /* keep at 400 so the hollow hatch lines render */
   font-size: 1.133em;
-  letter-spacing: -0.66px;
+  letter-spacing: -0.0097em;
   vertical-align: middle;
   background: linear-gradient(135deg, var(--color-accent) 0%, #6C8CF5 50%, #A177E8 100%);
   -webkit-background-clip: text;
@@ -327,13 +410,20 @@ header nav {
   .hero-artwork {
     flex: 0 0 auto;
     align-self: center;
+    width: 100%;
     max-width: 400px;
+    margin: 0; /* drop the desktop pull-up so the lines stay below the buttons */
+  }
+
+  .artwork-img {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
 @media (max-width: 768px) {
   .btn-asset-wrap img {
-    max-height: 36px;
+    max-height: 44px;
   }
 
   .hero {
@@ -346,7 +436,8 @@ header nav {
   }
 
   .hero h1 {
-    font-size: clamp(32px, 8vw, 44px);
+    font-size: clamp(24px, calc((100vw - 40px) / 11), 44px); /* biggest size that keeps the longest line on screen */
+    line-height: 1.18;
   }
 
   .description {
@@ -375,12 +466,6 @@ header nav {
 
   .hero-artwork {
     max-width: 280px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero h1 {
-    font-size: clamp(28px, 7vw, 36px);
   }
 }
 
@@ -464,8 +549,12 @@ header nav {
   }
 
   .approach-headline {
-    font-size: clamp(32px, 6vw, 50px);
-    line-height: 0.96;
+    font-size: clamp(30px, 6vw, 50px);
+    line-height: 1.1;
+  }
+
+  .approach-break {
+    display: none;
   }
 
   .approach-right {
@@ -484,7 +573,7 @@ header nav {
 
 @media (max-width: 480px) {
   .approach {
-    padding: 40px 16px 80px;
+    padding: 40px 20px 80px;
   }
 }
 
@@ -617,7 +706,7 @@ header nav {
     position: static;
     display: block;
     width: auto;
-    height: 30px;
+    height: 16px;
     margin: 0 0 18.49px;
     overflow: visible;
     clip-path: none;
@@ -837,7 +926,7 @@ header nav {
 
 @media (max-width: 480px) {
   .capabilities {
-    padding: 24px 16px 80px;
+    padding: 24px 20px 80px;
   }
 
   .capability-title {
@@ -1003,7 +1092,7 @@ header nav {
     color: var(--color-accent);
   }
 
-  .experience-stat-text {
+  .experience-stat:nth-child(n) .experience-stat-text {
     position: static;
     width: auto;
     font-size: 16px;
@@ -1014,7 +1103,7 @@ header nav {
 
 @media (max-width: 480px) {
   .experience {
-    padding: 0 16px 56px;
+    padding: 0 20px 56px;
   }
 
   .experience-card {
@@ -1227,7 +1316,7 @@ header nav {
 
 @media (max-width: 480px) {
   .process {
-    padding: 24px 16px 80px;
+    padding: 24px 20px 80px;
   }
 }
 
@@ -1454,7 +1543,7 @@ header nav {
 
 @media (max-width: 480px) {
   .contact {
-    padding: 0 16px 56px;
+    padding: 0 20px 56px;
   }
 
   .contact-card {
