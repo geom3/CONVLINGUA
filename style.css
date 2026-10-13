@@ -6,6 +6,9 @@
   --color-text: #f4f1ff;
   --color-muted: #9aa1c8;
   --color-accent: #4ee6d2;
+  --color-subtle: #7b82ac;
+  --color-slogan: #8f9cae;
+  --color-nav: #e8e9ef;
 
   --font-display: "Russo One", sans-serif;
   --font-body: "Inter", sans-serif;
@@ -94,18 +97,11 @@ header nav {
 .logo-wolf {
   display: block;
   flex-shrink: 0;
-  width: 44px; /* Enlarged wolf */
+  width: 44px;
   height: auto;
 }
 
 .logo-text {
-  display: block;
-  flex-shrink: 0;
-  width: 220px; /* Make the text prominently larger */
-  height: auto;
-}
-
-.logo-text-group {
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -114,7 +110,7 @@ header nav {
 
 .logo-wordmark {
   display: block;
-  width: 180px; /* Big, clear wordmark */
+  width: 180px;
   height: auto;
 }
 
@@ -125,12 +121,7 @@ header nav {
   line-height: 1;
   letter-spacing: 0.5px;
   white-space: nowrap;
-  color: #8f9cae;
-}
-
-/* Phone-only lockup (wolf + wordmark + slogan), hidden until the burger layout */
-.logo-mobile {
-  display: none;
+  color: var(--color-slogan);
 }
 
 .nav-links {
@@ -145,7 +136,7 @@ header nav {
   font-family: var(--font-ui);
   font-weight: 600;
   font-size: 15px;
-  color: #e8e9ef;
+  color: var(--color-nav);
   transition: color 0.3s ease;
 }
 
@@ -186,7 +177,7 @@ header nav {
   padding: 0;
   border: 0;
   background: none;
-  color: #e8e9ef;
+  color: var(--color-nav);
   cursor: pointer;
 }
 
@@ -222,7 +213,6 @@ header.is-open .nav-toggle span:nth-child(3) {
   transform: translateY(-6px) rotate(-45deg);
 }
 
-/* The bigger desktop logo needs the full width; keep the old size while the header is tight */
 @media (max-width: 1024px) {
   .logo {
     gap: 10px;
@@ -254,9 +244,6 @@ header.is-open .nav-toggle span:nth-child(3) {
   .logo-wolf {
     width: 32px;
   }
-  .logo-text {
-    width: 120px;
-  }
 
   .logo-wordmark {
     width: 125px;
@@ -276,44 +263,25 @@ header.is-open .nav-toggle span:nth-child(3) {
 
 @media (max-width: 640px) {
   .logo {
-    display: none;
-  }
-
-  .logo-mobile {
-    display: flex;
-    align-items: center;
     gap: 10px;
   }
 
-  .logo-mobile-wolf {
-    display: block;
-    flex-shrink: 0;
+  .logo-wolf {
     width: 36px;
-    height: auto;
   }
 
-  /* The wordmark stretches to the width of the slogan underneath it */
-  .logo-mobile-text {
-    display: flex;
-    flex-direction: column;
+  .logo-text {
     gap: 5px;
-    width: max-content;
   }
 
-  .logo-mobile-wordmark {
-    display: block;
+  /* The wordmark stretches to the width of the slogan under it */
+  .logo-wordmark {
     width: 100%;
-    height: auto;
   }
 
-  .logo-mobile-slogan {
-    font-family: var(--font-mono);
-    font-weight: 500;
+  .logo-slogan {
     font-size: clamp(5px, 1.5vw, 6px);
-    line-height: 1;
     letter-spacing: 0.4px;
-    white-space: nowrap;
-    color: #8f9cae;
   }
 
   .nav-btn-custom {
@@ -378,10 +346,6 @@ header.is-open .nav-toggle span:nth-child(3) {
   header {
     margin-top: 10px;
     padding: 8px 14px;
-  }
-
-  .logo {
-    width: 110px;
   }
 }
 
@@ -485,7 +449,7 @@ header.is-open .nav-toggle span:nth-child(3) {
   font-weight: 500;
   font-size: 11px;
   letter-spacing: 0.5px;
-  color: #8f9cae;
+  color: var(--color-slogan);
 }
 
 .hero-actions {
@@ -580,11 +544,8 @@ header.is-open .nav-toggle span:nth-child(3) {
   }
 
   .hero h1 {
-    font-size: clamp(
-      24px,
-      calc((100vw - 40px) / 11),
-      44px
-    ); /* biggest size that keeps the longest line on screen */
+    /* biggest size that keeps the longest line on screen */
+    font-size: clamp(24px, calc((100vw - 40px) / 11), 44px);
     line-height: 1.18;
   }
 
@@ -774,9 +735,8 @@ header.is-open .nav-toggle span:nth-child(3) {
 
 .compare-right {
   left: calc(var(--u) * 589.91);
-  padding-top: calc(
-    var(--u) * 48.49
-  ); /* room for the wordmark drawn in the SVG */
+  /* room for the wordmark drawn in the SVG */
+  padding-top: calc(var(--u) * 48.49);
 }
 
 .compare-heading {
@@ -896,7 +856,7 @@ header.is-open .nav-toggle span:nth-child(3) {
     top: 9.44px;
     width: 7.71px;
     height: 1.44px;
-    background: #7b82ac;
+    background: var(--color-subtle);
   }
 
   .compare-item-dot {
@@ -1052,7 +1012,7 @@ header.is-open .nav-toggle span:nth-child(3) {
   color: var(--color-muted);
 }
 
-/* Tablet / mobile: single column, the circuit lines become a simple rail */
+/* Tablet / mobile: single column, with the circuit line beside the list */
 @media (max-width: 1100px) {
   .capabilities-stage {
     --u: 1px; /* back to plain pixels */
@@ -1080,7 +1040,6 @@ header.is-open .nav-toggle span:nth-child(3) {
     display: none;
   }
 
-  /* phone_lines.svg is stretched to the height of the list */
   .capabilities-steps {
     --s: 1.4; /* size of the circuit line; script.js refines it */
     position: relative;
@@ -1089,8 +1048,8 @@ header.is-open .nav-toggle span:nth-child(3) {
     margin-top: 12px;
   }
 
-  /* phone_lines.svg is scaled evenly (so the nodes stay round) by script.js, which sets --s.
-     The empty left part of the file is cropped off. */
+  /* script.js scales the line evenly through --s so the nodes stay round and
+     meet the titles. The empty left part of the file is cropped off. */
   .capabilities-lines-phone {
     display: block;
     position: absolute;
@@ -1340,7 +1299,7 @@ header.is-open .nav-toggle span:nth-child(3) {
 .process-stage {
   --u: calc(100cqw / 1180);
   position: relative;
-  aspect-ratio: 1180 / 480; /* trimmed to the cards' bottom edge (Figma frame is 592 tall) */
+  aspect-ratio: 1180 / 480; /* trimmed to the cards' bottom edge */
 }
 
 .process-headline {
@@ -1381,7 +1340,7 @@ header.is-open .nav-toggle span:nth-child(3) {
   background: var(--card-bg) center / 100% 100% no-repeat;
 }
 
-/* Per-card values. Numbers are unitless on purpose: they get multiplied by --u. */
+/* Per-card values. Unitless on purpose: they get multiplied by --u. */
 .process-step:nth-child(1) {
   --x: 32;
   --wolf-x: 123.1;
@@ -1654,7 +1613,7 @@ header.is-open .nav-toggle span:nth-child(3) {
   font-weight: 400;
   font-size: calc(var(--u) * 15.9945);
   line-height: calc(var(--u) * 19);
-  color: #7b82ac;
+  color: var(--color-subtle);
 }
 
 .contact-email {
@@ -1832,7 +1791,7 @@ header.is-open .nav-toggle span:nth-child(3) {
   font-weight: 400;
   font-size: 14.1px;
   line-height: 17px;
-  color: #7b82ac;
+  color: var(--color-subtle);
 }
 
 .footer-slogan {
@@ -1840,7 +1799,7 @@ header.is-open .nav-toggle span:nth-child(3) {
   font-weight: 400;
   font-size: 13.1px;
   line-height: 17px;
-  color: #7b82ac;
+  color: var(--color-subtle);
 }
 
 @media (max-width: 768px) {
