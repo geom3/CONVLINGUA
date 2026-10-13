@@ -1,289 +1,581 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="CONVLINGUA provides expert Arabic and English AI data evaluation, SFT/RLHF pipelines, and professional localization. Where meaning lands as intended.">
-  <title>CONVLINGUA | Arabic & English AI Data Evaluation & Localization</title>
-  <!-- Canonical: the one official address of this page -->
-  <link rel="canonical" href="https://convlingua.com/">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CONVLINGUA provides expert Arabic and English AI data evaluation, SFT/RLHF pipelines, and professional localization. Where meaning lands as intended."
+    />
+    <title>
+      CONVLINGUA | Arabic & English AI Data Evaluation & Localization
+    </title>
+    <!-- Canonical: the one official address of this page -->
+    <link rel="canonical" href="https://convlingua.com/" />
 
-  <!-- Open Graph: the preview card when the link is shared (LinkedIn, WhatsApp, Slack, Facebook) -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="CONVLINGUA">
-  <meta property="og:title" content="CONVLINGUA | Arabic &amp; English AI Data Evaluation &amp; Localization">
-  <meta property="og:description" content="CONVLINGUA provides expert Arabic and English AI data evaluation, SFT/RLHF pipelines, and professional localization. Where meaning lands as intended.">
-  <meta property="og:url" content="https://convlingua.com/">
+    <!-- Open Graph: the preview card when the link is shared (LinkedIn, WhatsApp, Slack, Facebook) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CONVLINGUA" />
+    <meta
+      property="og:title"
+      content="CONVLINGUA | Arabic &amp; English AI Data Evaluation &amp; Localization"
+    />
+    <meta
+      property="og:description"
+      content="CONVLINGUA provides expert Arabic and English AI data evaluation, SFT/RLHF pipelines, and professional localization. Where meaning lands as intended."
+    />
+    <meta property="og:url" content="https://convlingua.com/" />
 
-  <!-- Twitter/X preview card -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="CONVLINGUA | Arabic &amp; English AI Data Evaluation &amp; Localization">
-  <meta name="twitter:description" content="CONVLINGUA provides expert Arabic and English AI data evaluation, SFT/RLHF pipelines, and professional localization. Where meaning lands as intended.">
+    <!-- Twitter/X preview card -->
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="CONVLINGUA | Arabic &amp; English AI Data Evaluation &amp; Localization"
+    />
+    <meta
+      name="twitter:description"
+      content="CONVLINGUA provides expert Arabic and English AI data evaluation, SFT/RLHF pipelines, and professional localization. Where meaning lands as intended."
+    />
 
-  <!-- JSON-LD: tells search engines who you are in a structured format -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "CONVLINGUA",
-    "url": "https://convlingua.com/",
-    "email": "collab@convlingua.com",
-    "description": "CONVLINGUA provides expert Arabic and English AI data evaluation, SFT/RLHF pipelines, and professional localization. Where meaning lands as intended.",
-    "knowsLanguage": ["ar", "en"]
-  }
-  </script>
+    <!-- JSON-LD: tells search engines who you are in a structured format -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "CONVLINGUA",
+        "url": "https://convlingua.com/",
+        "email": "collab@convlingua.com",
+        "description": "CONVLINGUA provides expert Arabic and English AI data evaluation, SFT/RLHF pipelines, and professional localization. Where meaning lands as intended.",
+        "knowsLanguage": ["ar", "en"]
+      }
+    </script>
 
-  <link rel="icon" href="/favicon.ico" sizes="32x32">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&family=Orbitron:wght@800&family=Rubik+Doodle+Shadow&family=Russo+One&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&family=Orbitron:wght@800&family=Rubik+Doodle+Shadow&family=Russo+One&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js" defer></script>
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <header>
-    <nav aria-label="Main">
-      <div class="logo-wrapper">
-        <img src="assets/navbar/navbar_logo.png" alt="CONVLINGUA" class="logo">
-      </div>
-      <div class="nav-links" id="nav-menu">
-        <a href="#approach">Approach</a>
-        <a href="#capabilities">Capabilities</a>
-        <a href="#process">Process</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <a href="#contact" class="nav-btn-custom">Request a pilot</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-grid">
-        <div class="hero-content">
-          <h1>AI doesn't scale on<br>translation. It scales<br>on <span class="rubik-meaning">meaning</span>.</h1>
-
-          <p class="description">
-            <img src="assets/hero/convlingua_text.svg" alt="CONVLINGUA" class="wordmark-img"> is a managed team of senior bilingual Arabic/English evaluators, built for the exact friction AI startups hit when a data pipeline has to cross a language and a culture at once. No fragmented freelancers, no QA gaps, just one accountable team, one review layer, and one point of contact, across every dialect you ship to.
-          </p>
-
-          <div class="slogan-badge">
-            <img src="assets/hero/wolf_logo.svg" alt="" class="wolf-icon">
-            <span class="slogan-text">where meaning lands as intended</span>
-          </div>
-
-          <div class="hero-actions">
-            <a href="#contact" class="btn-asset-wrap" aria-label="Request a pilot batch">
-              <img src="assets/hero/request_button_default.svg" alt="" class="btn-default">
-              <img src="assets/hero/request_button_hover.svg" alt="" class="btn-hover">
-            </a>
-            <a href="#capabilities" class="btn-asset-wrap" aria-label="See our capabilities">
-              <img src="assets/hero/capabilities_button_default.svg" alt="" class="btn-default">
-              <img src="assets/hero/capabilities_button_hover.svg" alt="" class="btn-hover">
-            </a>
-          </div>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Main">
+        <div class="logo-wrapper">
+          <a href="/" class="logo" aria-label="CONVLINGUA">
+            <img
+              src="assets/hero/wolf_logo.svg"
+              alt=""
+              class="logo-wolf"
+              width="44"
+              height="45"
+            />
+            <span class="logo-text-group">
+              <img
+                src="assets/approach/wordmark.svg"
+                alt="CONVLINGUA"
+                class="logo-wordmark"
+                width="180"
+                height="18"
+              />
+              <span class="logo-slogan">where meaning lands as intended</span>
+            </span>
+          </a>
+          <span class="logo-mobile" role="img" aria-label="CONVLINGUA">
+            <img
+              src="assets/hero/wolf_logo.svg"
+              alt=""
+              class="logo-mobile-wolf"
+              width="32"
+              height="33"
+            />
+            <span class="logo-mobile-text">
+              <img
+                src="assets/approach/wordmark.svg"
+                alt=""
+                class="logo-mobile-wordmark"
+                width="140"
+                height="14"
+              />
+              <span class="logo-mobile-slogan"
+                >where meaning lands as intended</span
+              >
+            </span>
+          </span>
         </div>
-
-        <div class="hero-artwork">
-          <img src="assets/hero/hero_colored_lines.webp" alt="" class="artwork-img">
+        <div class="nav-links" id="nav-menu">
+          <a href="#approach">Approach</a>
+          <a href="#capabilities">Capabilities</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
         </div>
-      </div>
-    </section>
+        <a href="#contact" class="nav-btn-custom">Request a pilot</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Open menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
 
-    <section class="approach" id="approach">
-      <div class="approach-container">
-        <div class="approach-top">
-          <div class="approach-left">
-            <h2 class="approach-headline">The same word doesn't<br class="approach-break"> mean the<br class="approach-break"> same thing twice.</h2>
-            <p class="approach-text">
-              The problem with scaling dialect: most pipelines are built to catch mistranslation, but few are built to catch the response that's technically correct and still lands wrong, off register and dialect, missing the cultural beat that a fragmented freelance pool won't reliably catch.
+    <main>
+      <section class="hero">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <h1>
+              AI doesn't scale on<br />translation. It scales<br />on
+              <span class="rubik-meaning">meaning</span>.
+            </h1>
+
+            <p class="description">
+              <img
+                src="assets/hero/convlingua_text.svg"
+                alt="CONVLINGUA"
+                class="wordmark-img"
+              />
+              is a managed team of senior bilingual Arabic/English evaluators,
+              built for the exact friction AI startups hit when a data pipeline
+              has to cross a language and a culture at once. No fragmented
+              freelancers, no QA gaps, just one accountable team, one review
+              layer, and one point of contact, across every dialect you ship to.
             </p>
+
+            <div class="slogan-badge">
+              <img src="assets/hero/wolf_logo.svg" alt="" class="wolf-icon" />
+              <span class="slogan-text">where meaning lands as intended</span>
+            </div>
+
+            <div class="hero-actions">
+              <a
+                href="#contact"
+                class="btn-asset-wrap"
+                aria-label="Request a pilot batch"
+              >
+                <img
+                  src="assets/hero/request_button_default.svg"
+                  alt=""
+                  class="btn-default"
+                />
+                <img
+                  src="assets/hero/request_button_hover.svg"
+                  alt=""
+                  class="btn-hover"
+                />
+              </a>
+              <a
+                href="#capabilities"
+                class="btn-asset-wrap"
+                aria-label="See our capabilities"
+              >
+                <img
+                  src="assets/hero/capabilities_button_default.svg"
+                  alt=""
+                  class="btn-default"
+                />
+                <img
+                  src="assets/hero/capabilities_button_hover.svg"
+                  alt=""
+                  class="btn-hover"
+                />
+              </a>
+            </div>
           </div>
 
-          <div class="approach-right">
-            <div class="approach-visual">
-              <div id="approach-globe" class="approach-globe" role="img" aria-label="Animated globe showing the dialects we cover"></div>
+          <div class="hero-artwork">
+            <img
+              src="assets/hero/hero_colored_lines.webp"
+              alt=""
+              class="artwork-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="approach" id="approach">
+        <div class="approach-container">
+          <div class="approach-top">
+            <div class="approach-left">
+              <h2 class="approach-headline">
+                The same word doesn't<br class="approach-break" />
+                mean the<br class="approach-break" />
+                same thing twice.
+              </h2>
+              <p class="approach-text">
+                The problem with scaling dialect: most pipelines are built to
+                catch mistranslation, but few are built to catch the response
+                that's technically correct and still lands wrong, off register
+                and dialect, missing the cultural beat that a fragmented
+                freelance pool won't reliably catch.
+              </p>
+            </div>
+
+            <div class="approach-right">
+              <div class="approach-visual">
+                <div
+                  id="approach-globe"
+                  class="approach-globe"
+                  role="img"
+                  aria-label="Animated globe showing the dialects we cover"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="approach-comparison">
+            <div class="compare-panel">
+              <div class="compare-left">
+                <h3 class="compare-heading">Fragmented freelance pools</h3>
+                <ul class="compare-list">
+                  <li class="compare-item">
+                    <span class="compare-item-dash"></span>
+                    <span class="compare-item-text"
+                      >Inconsistent rubric interpretation across
+                      contributors</span
+                    >
+                  </li>
+                  <li class="compare-item">
+                    <span class="compare-item-dash"></span>
+                    <span class="compare-item-text"
+                      >No shared quality bar between batches</span
+                    >
+                  </li>
+                  <li class="compare-item">
+                    <span class="compare-item-dash"></span>
+                    <span class="compare-item-text"
+                      >Dialect coverage depends on who's online that day</span
+                    >
+                  </li>
+                  <li class="compare-item">
+                    <span class="compare-item-dash"></span>
+                    <span class="compare-item-text"
+                      >QA happens after delivery, if at all</span
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="compare-right">
+                <img
+                  src="assets/approach/wordmark.svg"
+                  alt="CONVLINGUA"
+                  class="compare-wordmark"
+                  width="140"
+                  height="14"
+                />
+                <ul class="compare-list">
+                  <li class="compare-item">
+                    <span class="compare-item-dot"></span>
+                    <span class="compare-item-text"
+                      >One managed team, briefed on the same rubric</span
+                    >
+                  </li>
+                  <li class="compare-item">
+                    <span class="compare-item-dot"></span>
+                    <span class="compare-item-text"
+                      >Senior evaluators review every batch before
+                      delivery</span
+                    >
+                  </li>
+                  <li class="compare-item">
+                    <span class="compare-item-dot"></span>
+                    <span class="compare-item-text"
+                      >Deliberate coverage across Gulf, Egyptian, English
+                      world-wide, Maghreb, MSA and more</span
+                    >
+                  </li>
+                  <li class="compare-item">
+                    <span class="compare-item-dot"></span>
+                    <span class="compare-item-text"
+                      >QA is a layer in the pipeline, not an afterthought</span
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+      <section class="capabilities" id="capabilities">
+        <div class="capabilities-container">
+          <div class="capabilities-stage">
+            <h2 class="capabilities-headline">
+              Five ways we integrate into your pipeline.
+            </h2>
+            <p class="capabilities-intro">
+              Each one is staffed by evaluators with a minimum of two years in
+              the AI data space, and extra domain expertise (IT, Marketing,
+              Commerce, etc.) not treated as a separate service, but as one
+              coordinated layer of review.
+            </p>
 
-        <div class="approach-comparison">
-          <div class="compare-panel">
-            <div class="compare-left">
-              <h3 class="compare-heading">Fragmented freelance pools</h3>
-              <ul class="compare-list">
-                <li class="compare-item">
-                  <span class="compare-item-dash"></span>
-                  <span class="compare-item-text">Inconsistent rubric interpretation across contributors</span>
+            <div class="capabilities-steps">
+              <img
+                class="capabilities-lines"
+                src="assets/capabilities/lines.svg"
+                alt=""
+                width="78"
+                height="566"
+              />
+              <span class="capabilities-lines-phone" aria-hidden="true"
+                ><img
+                  src="assets/capabilities/phone_lines.svg"
+                  alt=""
+                  width="78"
+                  height="566"
+              /></span>
+
+              <ul class="capabilities-list">
+                <li class="capability">
+                  <h3 class="capability-title">
+                    Cross-Lingual RLHF, MTPE,<br />SFT &amp; Reward Modeling
+                  </h3>
+                  <p class="capability-text">
+                    Golden-pair generation, side-by-side model comparisons, and
+                    output ranking tuned for safety and regional dialect
+                    accuracy.
+                  </p>
                 </li>
-                <li class="compare-item">
-                  <span class="compare-item-dash"></span>
-                  <span class="compare-item-text">No shared quality bar between batches</span>
+                <li class="capability">
+                  <h3 class="capability-title">
+                    Multimodal Data<br />Evaluation
+                  </h3>
+                  <p class="capability-text">
+                    Prompt-response analysis across text, vision, and code, held
+                    to the same bar in both English and Arabic.
+                  </p>
                 </li>
-                <li class="compare-item">
-                  <span class="compare-item-dash"></span>
-                  <span class="compare-item-text">Dialect coverage depends on who's online that day</span>
+                <li class="capability">
+                  <h3 class="capability-title">
+                    Model Red-Teaming &amp;<br />Bias Mitigation
+                  </h3>
+                  <p class="capability-text">
+                    Stress-testing conversational agents to surface logic
+                    failures, cultural erasure, and cross-lingual hallucination
+                    before your users do.
+                  </p>
                 </li>
-                <li class="compare-item">
-                  <span class="compare-item-dash"></span>
-                  <span class="compare-item-text">QA happens after delivery, if at all</span>
+                <li class="capability">
+                  <h3 class="capability-title">
+                    UI/UX &amp; RTL Localization<br />QA
+                  </h3>
+                  <p class="capability-text">
+                    Auditing front-end integrity, visual hierarchy, and
+                    right-to-left layout scaling collisions that English-first
+                    QA tends to miss.
+                  </p>
+                </li>
+                <li class="capability">
+                  <h3 class="capability-title">
+                    Front-End Code &amp; API<br />Evaluation
+                  </h3>
+                  <p class="capability-text">
+                    Assessing AI-generated HTML, CSS, and JavaScript, plus
+                    developer CLI and API tool integrations, for functional
+                    accuracy.
+                  </p>
                 </li>
               </ul>
             </div>
 
-            <div class="compare-right">
-              <img src="assets/approach/wordmark.svg" alt="CONVLINGUA" class="compare-wordmark" width="140" height="14">
-              <ul class="compare-list">
-                <li class="compare-item">
-                  <span class="compare-item-dot"></span>
-                  <span class="compare-item-text">One managed team, briefed on the same rubric</span>
-                </li>
-                <li class="compare-item">
-                  <span class="compare-item-dot"></span>
-                  <span class="compare-item-text">Senior evaluators review every batch before delivery</span>
-                </li>
-                <li class="compare-item">
-                  <span class="compare-item-dot"></span>
-                  <span class="compare-item-text">Deliberate coverage across Gulf, Egyptian, English world-wide, Maghreb, MSA and more</span>
-                </li>
-                <li class="compare-item">
-                  <span class="compare-item-dot"></span>
-                  <span class="compare-item-text">QA is a layer in the pipeline, not an afterthought</span>
-                </li>
-              </ul>
-            </div>
+            <img
+              class="capabilities-figure"
+              src="assets/capabilities/ai.svg"
+              alt=""
+              width="322"
+              height="354"
+            />
           </div>
         </div>
-      </div>
-    </section>
-    <section class="capabilities" id="capabilities">
-      <div class="capabilities-container">
-        <div class="capabilities-stage">
-          <h2 class="capabilities-headline">Five ways we integrate into your pipeline.</h2>
-          <p class="capabilities-intro">
-            Each one is staffed by evaluators with a minimum of two years in the AI data space, and extra domain expertise (IT, Marketing, Commerce, etc.) not treated as a separate service, but as one coordinated layer of review.
-          </p>
+      </section>
+      <section class="experience">
+        <div class="experience-container">
+          <div class="experience-card">
+            <blockquote class="experience-quote">
+              "Every batch is processed,<br class="experience-break" />
+              reviewed, and refined by senior<br class="experience-break" />
+              evaluators
+              <span class="experience-highlight"
+                >before it ever reaches<br class="experience-break" />
+                your engineering team.</span
+              >"
+            </blockquote>
 
-          <div class="capabilities-steps">
-            <img class="capabilities-lines" src="assets/capabilities/lines.svg" alt="" width="78" height="566">
+            <img
+              class="experience-cubes"
+              src="assets/blocks/cubes.svg"
+              alt=""
+              width="193"
+              height="298"
+            />
 
-            <ul class="capabilities-list">
-              <li class="capability">
-                <h3 class="capability-title">Cross-Lingual RLHF, MTPE,<br>SFT &amp; Reward Modeling</h3>
-                <p class="capability-text">Golden-pair generation, side-by-side model comparisons, and output ranking tuned for safety and regional dialect accuracy.</p>
+            <ul class="experience-stats">
+              <li class="experience-stat">
+                <span class="experience-stat-value">2+</span>
+                <span class="experience-stat-text"
+                  >Years of hands-on AI data experience, minimum, for every
+                  evaluator on the team</span
+                >
               </li>
-              <li class="capability">
-                <h3 class="capability-title">Multimodal Data<br>Evaluation</h3>
-                <p class="capability-text">Prompt-response analysis across text, vision, and code, held to the same bar in both English and Arabic.</p>
+              <li class="experience-stat">
+                <span class="experience-stat-value">1</span>
+                <span class="experience-stat-text"
+                  >accountable team instead of a rotating freelance pool</span
+                >
               </li>
-              <li class="capability">
-                <h3 class="capability-title">Model Red-Teaming &amp;<br>Bias Mitigation</h3>
-                <p class="capability-text">Stress-testing conversational agents to surface logic failures, cultural erasure, and cross-lingual hallucination before your users do.</p>
-              </li>
-              <li class="capability">
-                <h3 class="capability-title">UI/UX &amp; RTL Localization<br>QA</h3>
-                <p class="capability-text">Auditing front-end integrity, visual hierarchy, and right-to-left layout scaling collisions that English-first QA tends to miss.</p>
-              </li>
-              <li class="capability">
-                <h3 class="capability-title">Front-End Code &amp; API<br>Evaluation</h3>
-                <p class="capability-text">Assessing AI-generated HTML, CSS, and JavaScript, plus developer CLI and API tool integrations, for functional accuracy.</p>
+              <li class="experience-stat">
+                <span class="experience-stat-value">100%</span>
+                <span class="experience-stat-text"
+                  >of batches pass a senior QA review before delivery</span
+                >
               </li>
             </ul>
           </div>
-
-          <img class="capabilities-figure" src="assets/capabilities/ai.svg" alt="" width="322" height="354">
         </div>
-      </div>
-    </section>
-    <section class="experience">
-      <div class="experience-container">
-        <div class="experience-card">
-          <blockquote class="experience-quote">
-            "Every batch is processed,<br class="experience-break"> reviewed, and refined by senior<br class="experience-break"> evaluators <span class="experience-highlight">before it ever reaches<br class="experience-break"> your engineering team.</span>"
-          </blockquote>
+      </section>
+      <section class="process" id="process">
+        <div class="process-container">
+          <div class="process-stage">
+            <h2 class="process-headline">
+              Built to slot into a pipeline you<br class="process-break" />
+              already run.
+            </h2>
+            <p class="process-intro">
+              Whether that means complex, multi-tiered rubrics in a spreadsheet
+              or your own<br class="process-break" />
+              proprietary labeling platform.
+            </p>
 
-          <img class="experience-cubes" src="assets/blocks/cubes.svg" alt="" width="193" height="298">
-
-          <ul class="experience-stats">
-            <li class="experience-stat">
-              <span class="experience-stat-value">2+</span>
-              <span class="experience-stat-text">Years of hands-on AI data experience, minimum, for every evaluator on the team</span>
-            </li>
-            <li class="experience-stat">
-              <span class="experience-stat-value">1</span>
-              <span class="experience-stat-text">accountable team instead of a rotating freelance pool</span>
-            </li>
-            <li class="experience-stat">
-              <span class="experience-stat-value">100%</span>
-              <span class="experience-stat-text">of batches pass a senior QA review before delivery</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="process" id="process">
-      <div class="process-container">
-        <div class="process-stage">
-          <h2 class="process-headline">Built to slot into a pipeline you<br class="process-break"> already run.</h2>
-          <p class="process-intro">Whether that means complex, multi-tiered rubrics in a spreadsheet or your own<br class="process-break"> proprietary labeling platform.</p>
-
-          <ol class="process-steps">
-            <li class="process-step">
-              <img class="process-wolf" src="assets/process/wolf-logo-green.svg" alt="Step 1" width="93" height="96">
-              <h3 class="process-step-title">We learn your rubric</h3>
-              <p class="process-step-text">We adapt to your existing tooling and grading criteria rather than asking you to adopt ours.</p>
-            </li>
-            <li class="process-step">
-              <img class="process-wolf" src="assets/process/wolf-logo-blue.svg" alt="Step 2" width="93" height="96">
-              <h3 class="process-step-title">The team works the batch</h3>
-              <p class="process-step-text">Bilingual evaluators apply the rubric and guidelines across dialects, modalities, and edge cases you define.</p>
-            </li>
-            <li class="process-step">
-              <img class="process-wolf" src="assets/process/wolf-logo-purple.svg" alt="Step 3" width="93" height="96">
-              <h3 class="process-step-title">Senior QA before delivery</h3>
-              <p class="process-step-text">Nothing reaches your engineering team until it's been checked against the same standard, batch to batch.</p>
-            </li>
-          </ol>
-        </div>
-      </div>
-    </section>
-    <section class="contact" id="contact">
-      <div class="contact-container">
-        <div class="contact-card">
-          <img class="contact-signature" src="assets/contact/signature.svg" alt="" width="309" height="352">
-
-          <h2 class="contact-headline">Bring us your next batch.</h2>
-          <p class="contact-text">Tell us what you're building and what "good" looks like for<br class="contact-break"> your model. We'll scope a pilot around your guidelines , not the<br class="contact-break"> other way around.</p>
-
-          <div class="contact-box">
-            <p class="contact-label">GET IN TOUCH</p>
-            <a class="contact-email" href="mailto:collab@convlingua.com">collab@convlingua.com</a>
-           <a class="contact-button" href="https://mail.google.com/mail/?view=cm&fs=1&to=collab%40convlingua.com" target="_blank" rel="noopener noreferrer">
-              <img class="btn-default" src="assets/contact/Email-button.svg" alt="Email the team" width="320" height="53">
-              <img class="btn-hover" src="assets/contact/Email-button-hover.svg" alt="" width="250" height="41">
-            </a>
+            <ol class="process-steps">
+              <li class="process-step">
+                <img
+                  class="process-wolf"
+                  src="assets/process/wolf-logo-green.svg"
+                  alt="Step 1"
+                  width="93"
+                  height="96"
+                />
+                <h3 class="process-step-title">We learn your rubric</h3>
+                <p class="process-step-text">
+                  We adapt to your existing tooling and grading criteria rather
+                  than asking you to adopt ours.
+                </p>
+              </li>
+              <li class="process-step">
+                <img
+                  class="process-wolf"
+                  src="assets/process/wolf-logo-blue.svg"
+                  alt="Step 2"
+                  width="93"
+                  height="96"
+                />
+                <h3 class="process-step-title">The team works the batch</h3>
+                <p class="process-step-text">
+                  Bilingual evaluators apply the rubric and guidelines across
+                  dialects, modalities, and edge cases you define.
+                </p>
+              </li>
+              <li class="process-step">
+                <img
+                  class="process-wolf"
+                  src="assets/process/wolf-logo-purple.svg"
+                  alt="Step 3"
+                  width="93"
+                  height="96"
+                />
+                <h3 class="process-step-title">Senior QA before delivery</h3>
+                <p class="process-step-text">
+                  Nothing reaches your engineering team until it's been checked
+                  against the same standard, batch to batch.
+                </p>
+              </li>
+            </ol>
           </div>
         </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="contact-container">
+          <div class="contact-card">
+            <img
+              class="contact-signature"
+              src="assets/contact/signature.svg"
+              alt=""
+              width="309"
+              height="352"
+            />
+
+            <h2 class="contact-headline">Bring us your next batch.</h2>
+            <p class="contact-text">
+              Tell us what you're building and what "good" looks like for<br
+                class="contact-break"
+              />
+              your model. We'll scope a pilot around your guidelines , not
+              the<br class="contact-break" />
+              other way around.
+            </p>
+
+            <div class="contact-box">
+              <p class="contact-label">GET IN TOUCH</p>
+              <a class="contact-email" href="mailto:collab@convlingua.com"
+                >collab@convlingua.com</a
+              >
+              <a
+                class="contact-button"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=collab%40convlingua.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="btn-default"
+                  src="assets/contact/Email-button.svg"
+                  alt="Email the team"
+                  width="320"
+                  height="53"
+                />
+                <img
+                  class="btn-hover"
+                  src="assets/contact/Email-button-hover.svg"
+                  alt=""
+                  width="250"
+                  height="41"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img
+            class="footer-logo"
+            src="assets/footer/wolf_logo.svg"
+            alt=""
+            width="32"
+            height="33"
+          />
+          <p class="footer-copy">
+            © 2026 Convlingua.<br />Designed by Manoko(✧ᴗ✧) ©2026
+          </p>
+        </div>
+        <p class="footer-slogan">where meaning lands as intended</p>
       </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <img class="footer-logo" src="assets/footer/wolf_logo.svg" alt="" width="32" height="33">
-        <p class="footer-copy">© 2026 Convlingua.<br>Designed by Manoko(✧ᴗ✧) ©2026</p>
-      </div>
-      <p class="footer-slogan">where meaning lands as intended</p>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
