@@ -242,7 +242,7 @@ header.is-open .nav-toggle span:nth-child(3) {
     gap: 8px;
   }
   .logo-wolf {
-    width: 32px;
+    width: 30px;
   }
 
   .logo-wordmark {
@@ -267,21 +267,22 @@ header.is-open .nav-toggle span:nth-child(3) {
   }
 
   .logo-wolf {
-    width: 36px;
+    width: 28px;
   }
 
   .logo-text {
-    gap: 5px;
+    width: 100px;
+    gap: 4px;
   }
 
-  /* The wordmark stretches to the width of the slogan under it */
   .logo-wordmark {
     width: 100%;
   }
 
   .logo-slogan {
-    font-size: clamp(5px, 1.5vw, 6px);
-    letter-spacing: 0.4px;
+    font-size: 3.5px;
+    letter-spacing: 0.3px;
+    text-align: center;
   }
 
   .nav-btn-custom {
