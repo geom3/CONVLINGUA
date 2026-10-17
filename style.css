@@ -97,7 +97,7 @@ header nav {
 .logo-wolf {
   display: block;
   flex-shrink: 0;
-  width: 44px;
+  width: 40px;
   height: auto;
 }
 
@@ -110,14 +110,14 @@ header nav {
 
 .logo-wordmark {
   display: block;
-  width: 180px;
+  width: 150px;
   height: auto;
 }
 
 .logo-slogan {
   font-family: var(--font-mono);
   font-weight: 500;
-  font-size: 8.5px;
+  font-size: 7.1px;
   line-height: 1;
   letter-spacing: 0.5px;
   white-space: nowrap;
