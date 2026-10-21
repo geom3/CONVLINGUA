@@ -36,4 +36,6 @@ This project was brought to life by a two-person design and development powerhou
 * 🎨 **UI/UX Design:** Manoko(✧ᴗ✧) 
 * 💻 **Web Development:** Geom(⁠⌐⁠■⁠-⁠■⁠) 
 
+**Live Link:** https://www.convlingua.com
+
 ---
